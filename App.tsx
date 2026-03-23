@@ -575,7 +575,7 @@ function App() {
                     >
                        <p className="text-sm font-bold text-black dark:text-white opacity-80 px-4 text-center">
                           Click to view profile<br/>
-                          <span className="text-xs opacity-50 font-mono">space.bilibili.com/547350986</span>
+                          <span className="text-xs opacity-50 font-mono">space.bilibili.com</span>
                        </p>
                     </div>
                  </div>
