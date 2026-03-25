@@ -425,7 +425,7 @@ function App() {
                      <h3 className="text-2xl font-bold mb-2 text-black dark:text-white transition-colors duration-300 text-center">
                        {content.emailMeLabel}
                      </h3>
-                     <p className="text-lg opacity-70 text-gray-500 dark:text-gray-400 transition-colors duration-300 select-text text-left">
+                     <p className="text-lg opacity-70 text-gray-500 dark:text-gray-400 transition-colors duration-300 select-text text-center break-words">
                        {content.email}
                      </p>
                   </div>
