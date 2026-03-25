@@ -27,7 +27,7 @@ export const CONTACT_DATA: Record<Language, ContactContent> = {
     locationValue: "上海/广州, 中国",
     contactLabel: "取得联系",
     emailMeLabel: "邮箱",
-    email: "zhoupeng.media\n@outlook.com",
+    email: "zhoupeng.media@outlook.com",
     hello: "你好 ^o^",
     intro: "欢迎探讨与合作。",
     socials: {

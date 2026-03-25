@@ -50,7 +50,7 @@ export const EDUCATION_DATA: Record<Language, EducationPageContent> = {
   },
   en: {
     title: "Education",
-    about: "I",
+    about: "I am a soon-to-be graduate from the University of Portsmouth with a BSc (Hons) in Creative Media Technologies, expected to graduate in summer 2026. Passionate about technical art and creative storytelling, I focus on bridging the gap between artistic vision and technical execution through AI-assisted workflows, motion capture, and interactive prototyping. Beyond the technical realm, I am an avid creator and consumer of ACG (Anime, Comics, and Games) culture, with my video content amassing over 50K views. I am keen on optimizing production processes and finding purposeful workflows in creative projects, whether it's day-to-day life planning or systematizing complex technical documentation.",
     openToWork: "Learning by Doing + Seeking Internship",
     viewHonorsLabel: "View Honors & Awards",
     honorsTitle: "Honors & Awards",
