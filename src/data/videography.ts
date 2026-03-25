@@ -11,11 +11,11 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     zh: {
       title: '新加坡日本旅游记',
       subtitle: '猫meme怎能不算是一种纪实',
-      description: '学习空余剪辑的猫meme旅游视频。',
+      description: '学习时间空余剪辑的猫meme旅游视频。',
       role: '个人项目',
       tags: ['猫meme', '游记','剪辑'],
       awards: ['综合播放量20K+'],
-      concept: "依据流行趋势与信息差打造",
+      concept: "",
       roleDetail: "脚本构思、素材收集与视频剪辑，独立完成从内容创意到后期制作的全流程。"
     },
     en: {
@@ -25,7 +25,7 @@ export const VIDEOGRAPHY_DATA: Project[] = [
       role: 'Personal Project',
       tags: ['Cat Memes', 'Travelogue', 'Editing'],
       awards: ['20K+ total views' ],
-      concept: "Crafting content based on trending topics and information gaps.",
+      concept: "",
       roleDetail: "From script ideation and material gathering to video editing, I independently handled the entire process from content creation to post-production."
     }
   }

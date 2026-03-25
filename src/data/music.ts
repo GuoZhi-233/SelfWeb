@@ -20,30 +20,51 @@ export interface Song {
 export const MUSIC_PLAYLIST: Song[] = [
   {
     id: "local-01",
-    title: "Pirene's Fountain",
-    artist: "Vallès",
-    cover: "/music/covers/Pirene's Fountain Vallès.jpg", // 确保文件名对应
-    audio: "/music/audio/Vallès - Pirene's Fountain.mp3"     // 确保文件名对应
+    title: "ハレナハレ",
+    artist: "清塚信也,NAOTO",
+    cover: "/music/covers/haru.jpg", // 确保文件名对应
+    audio: "/music/audio/清塚信也,NAOTO - ハレナハレ.flac"     // 确保文件名对应
   },
   {
     id: "local-02",
-    title: "Sleepless nights - lofi hiphop mix pt.2",
+    title: "Guangzhou_Toys",
     artist: "Mixed Artists",
-    cover: "/music/covers/lofi-cat-night.jpg", 
-    audio: "/music/audio/Sleepless nights - lofi hiphop mix pt.2.mp3"
+    cover: "/music/covers/Guangzhou.jpg", 
+    audio: "/music/audio/Guangzhou_Toys.mp3"
   },
   {
     id: "local-03",
-    title: "Island",
-    artist: "Nujabes/Uyama Hiroto/Haruka Nakamura",
-    cover: "/music/covers/spiritual state.jpg", // 确保文件名对应
-    audio: "/music/audio/Nujabes,Uyama Hiroto,haruka nakamura - Island (feat. Uyama Hiroto & haruka nakamura).mp3"     // 确保文件名对应
+    title: "美术练习(Remix)",
+    artist: "HOW",
+    cover: "/music/covers/Art.jpg", 
+    audio: "/music/audio/HOW - 美术练习(Remix).mp3"
   },
   {
     id: "local-04",
-    title: "the updater",
-    artist: "TSUTCHIE",
-    cover: "/music/covers/Tsutchie-Samurai Champloo Music Recored.jpg", // 确保文件名对应
-    audio: "/music/audio/TSUTCHIE - the updater.mp3"     // 确保文件名对应
+    title: "Surges",
+    artist: "Akuya",
+    cover: "/music/covers/surges.jpg",
+    audio: "/music/audio/Akuya - Surges.flac"     
+  },
+    {
+    id: "local-05",
+    title: "Blue",
+    artist: "YOASOBI",
+    cover: "/music/covers/blue.jpg",
+    audio: "/music/audio/YOASOBI - Blue.mp3"     
+  },
+    {
+    id: "local-06",
+    title: "Summer Ghost",
+    artist: "小瀬村晶",
+    cover: "/music/covers/summer.jpg",
+    audio: "/music/audio/小瀬村晶 - Summer Ghost.flac"     
+  },
+    {
+    id: "local-07",
+    title: "Paradise",
+    artist: "NiziU",
+    cover: "/music/covers/paradise.jpg",
+    audio: "/music/audio/NiziU - Paradise -Instrumental-.flac"     
   },
 ];
