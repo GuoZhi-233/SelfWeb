@@ -5,7 +5,7 @@ export const DESIGN_DATA: Project[] = [
     id: 'd1',
     common: {
       category: 'Graphics & UI',
-      image: "picture/cover/uniqlo.png",
+      image: '/picture/cover/uniqlo.png',
       figmaUrl: 'https://www.figma.com/slides/jJu59XIkQW5HifNfEpTNC3/Why-do-people-choose--Uniqlo--?t=553XDrysy7dXQZWc-6', 
       gallery: ['']
     },
