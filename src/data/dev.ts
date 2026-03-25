@@ -7,24 +7,24 @@ export const DEV_DATA: Project[] = [
       category: 'Development',
       image: '', // Placeholder
       icon: 'message-circle',
-      websiteUrl: 'https://wechat-msganalysis-krgkfhfdcxwmtwst4jc4bw.streamlit.app/',
-      githubUrl: 'https://github.com/LuN3cy/WeChat-MsgAnalysis'
+      websiteUrl: '',
+      githubUrl: ''
     },
     zh: {
-      title: '微信聊天记录数据分析',
-      subtitle: 'Python / Streamlit',
-      description: '对json格式的聊天记录进行完整的分析，包含时段、内容和互动模式。',
-      role: '全栈开发',
-      tags: ['Python', 'Streamlit', '数据分析'],
-      roleDetail: "独立完成后端数据处理逻辑与前端可视化界面开发。"
+      title: '情绪治愈手机APP(AR)',
+      subtitle: 'Unity / C#',
+      description: '((本科毕业设计)包含引导式呼吸及色彩漫步两大模块，旨在提升用户日常状态，通过颜色发现生活美好细节)',
+      role: '创意技术开发',
+      tags: ['Unity', 'C#', 'AR'],
+      roleDetail: "融合交互设计与技术实现，独立完成情绪类 AR 应用的逻辑开发与视觉表达。"
     },
     en: {
-      title: 'WeChat Msg Analysis',
-      subtitle: 'Python / Streamlit',
-      description: 'Comprehensive analysis of JSON chat records, including time slots, content, and interaction patterns.',
-      role: 'Full Stack Developer',
-      tags: ['Python', 'Streamlit', 'Data Analysis'],
-      roleDetail: "Independently completed backend data processing logic and frontend visualization interface development."
-    }
+      title: 'Emotional Healing Mobile App (AR)',
+      subtitle: 'Unity / C#',
+      description: '(Bachelor Final Year Project) Featuring guided breath and color walk modules, designed to enhance users daily state and discover the beauty in life through colors.',
+      role: 'Creative Tech Development',
+      tags: ['Unity', 'C#', 'AR'],
+      roleDetail: "Integrating interaction design with technical implementation, independently developed the logic and visual expression for an emotion-focused AR application."
    }
+  }
 ];
