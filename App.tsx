@@ -12,6 +12,7 @@ import { NAV_ITEMS } from './src/data/navigation';
 import { CONTACT_DATA } from './src/data/contact';
 import { ARTICLES_PAGE_DATA } from './src/data/articles';
 import { PORTFOLIO_PAGE_DATA } from './src/data/portfolioPage';
+import { VIDEOGRAPHY_DATA } from './src/data/videography';
 import { Language, Category } from './types';
 
 interface ExplodedElementData {

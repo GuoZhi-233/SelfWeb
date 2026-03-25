@@ -16,7 +16,7 @@ export interface HomeContent {
 export const HOME_DATA: Record<Language, HomeContent> = {
   zh: {
     heroItems: [
-      { text: "摄影摄像", annotation: "（日常生活）", category: Category.VIDEO }, // category is kept as VIDEO but UI will split
+      { text: "摄影摄像", annotation: "（记录生活）", category: Category.VIDEO }, // category is kept as VIDEO but UI will split
       { text: "艺术设计", annotation: "（当前主攻）", category: Category.DESIGN },
       { text: "应用开发", annotation: "（vibe builder）", category: Category.DEV },
       { text: "炒面炒饭", annotation: "（还有甜品）", category: null }

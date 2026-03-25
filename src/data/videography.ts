@@ -4,9 +4,9 @@ export const VIDEOGRAPHY_DATA: Project[] = [
   {
     id: 'sample-1',
     common: {
-      category: 'Category Name',
-      image: 'https://via.placeholder.com/1920x1080?text=Project+Cover',
-      // bilibiliId: 'BVxxxxxxx' // For video
+      category: 'Videography',
+      image: 'https://i2.hdslb.com/bfs/archive/dec44542254697305bec9d6d4275530dd37a99d3.jpg@672w_378h_1c.avif',
+      bilibiliId: 'BV1R99xYgEXj' // For video
     },
     zh: {
       title: '示例项目标题',
