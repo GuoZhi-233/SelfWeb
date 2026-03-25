@@ -27,34 +27,59 @@ export interface Article {
   date?: string;
 }
 
-export interface Project {
-  id: string;
+export interface ProjectCommon {
+  category: Category | string;
+  image: string;
+  videoUrl?: string;
+  bilibiliId?: string;
+  figmaUrl?: string;
+  gallery?: string[];
+  externalLink?: string;
+  websiteUrl?: string;
+  githubUrl?: string;
+  icon?: string;
+}
+
+export interface ProjectLanguage {
   title: string;
   subtitle: string;
-  category: Category;
   description: string;
   role: string;
-  image: string; // URL placeholder (Cover/Thumbnail)
-  videoUrl?: string; // URL to .mp4 file
-  bilibiliId?: string; // Bilibili Video ID (e.g. BV1xx...)
-  figmaUrl?: string; // Figma File URL
-  gallery?: string[]; // Additional images (URLs)
-  externalLink?: string; // External link (e.g. Bilibili, Behance)
   tags: string[];
-  // New detailed fields
   concept?: string;
   roleDetail?: string;
-  awards?: string[]; // Array of award strings
+  awards?: string[];
+}
+
+export interface Project {
+  id: string;
+  common?: ProjectCommon;
+  zh?: ProjectLanguage;
+  en?: ProjectLanguage;
   
-  // Special field for placeholder UI
+  // Legacy direct fields (for backward compatibility)
+  title?: string;
+  subtitle?: string;
+  category?: Category;
+  description?: string;
+  role?: string;
+  image?: string;
+  videoUrl?: string;
+  bilibiliId?: string;
+  figmaUrl?: string;
+  gallery?: string[];
+  externalLink?: string;
+  tags?: string[];
+  concept?: string;
+  roleDetail?: string;
+  awards?: string[];
   bilingualTitle?: {
     zh: string;
     en: string;
   };
-
-  websiteUrl?: string; // Online preview URL
-  githubUrl?: string; // GitHub repository URL
-  icon?: string; // Icon name for Dev projects
+  websiteUrl?: string;
+  githubUrl?: string;
+  icon?: string;
 }
 
 export interface Experience {
