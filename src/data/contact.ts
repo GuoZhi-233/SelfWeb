@@ -41,10 +41,10 @@ export const CONTACT_DATA: Record<Language, ContactContent> = {
   },
   en: {
     baseLabel: "BASE",
-    locationValue: "Your City, Country",
+    locationValue: "Portsmouth, UK",
     contactLabel: "Get in touch",
     emailMeLabel: "Email Me",
-    email: "your.email@example.com",
+    email: "zhoupeng.media@outlook.com",
     hello: "Hello ;-)",
     intro: "Welcome to discuss & cooperate.",
     socials: {
