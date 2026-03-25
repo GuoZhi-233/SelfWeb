@@ -5,28 +5,28 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     id: 'sample-1',
     common: {
       category: 'Videography',
-      image: 'https://i2.hdslb.com/bfs/archive/dec44542254697305bec9d6d4275530dd37a99d3.jpg@672w_378h_1c.avif',
-      bilibiliId: 'BV1R99xYgEXj' // For video
+      image: 'https://i0.hdslb.com/bfs/archive/bc00538b71641d24ec6836ba8a0da18ac4dff0d6.jpg@672w_378h_1c.avif',
+      bilibiliId: 'BV14r421b7aE' // For video
     },
     zh: {
-      title: '示例项目标题',
-      subtitle: '示例副标题',
-      description: '项目描述占位符。',
-      role: '角色',
-      tags: ['标签1', '标签2'],
-      awards: [],
-      concept: "",
-      roleDetail: ""
+      title: '新加坡日本旅游记',
+      subtitle: '猫meme怎能不算是一种纪实',
+      description: '学习空余剪辑的猫meme旅游视频。',
+      role: '个人项目',
+      tags: ['猫meme', '游记','剪辑'],
+      awards: ['综合播放量20K+'],
+      concept: "依据流行趋势与信息差打造",
+      roleDetail: "脚本构思、素材收集与视频剪辑，独立完成从内容创意到后期制作的全流程。"
     },
     en: {
-      title: 'Example Project Title',
-      subtitle: 'Example Subtitle',
-      description: 'Project description placeholder.',
-      role: 'Role',
-      tags: ['Tag 1', 'Tag 2'],
-      awards: [],
-      concept: "",
-      roleDetail: ""
+      title: 'Singapore & Japan Travelogue',
+      subtitle: 'Cat memes could be a form of documentary LoL',
+      description: 'A cat meme travel video edited during my free time.',
+      role: 'Personal Project',
+      tags: ['Cat Memes', 'Travelogue', 'Editing'],
+      awards: ['20K+ total views' ],
+      concept: "Crafting content based on trending topics and information gaps.",
+      roleDetail: "From script ideation and material gathering to video editing, I independently handled the entire process from content creation to post-production."
     }
   }
 ];
