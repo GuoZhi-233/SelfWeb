@@ -51,7 +51,7 @@ export const MUSIC_PLAYLIST: Song[] = [
     title: "Blue",
     artist: "YOASOBI",
     cover: "/music/covers/blue.jpg",
-    audio: "/music/audio/YOASOBI - Blue.mp3"     
+    audio: "/music/audio/YOASOBI-blue.mp3"     
   },
     {
     id: "local-06",
