@@ -9,7 +9,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
       // bilibiliId: 'BVxxxxxxx' // For video
     },
     zh: {
-      title: '示例项目标题',
+      title: '测试测试测试',
       subtitle: '示例副标题',
       description: '项目描述占位符。',
       role: '角色',
