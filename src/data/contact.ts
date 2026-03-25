@@ -44,7 +44,7 @@ export const CONTACT_DATA: Record<Language, ContactContent> = {
     locationValue: "Portsmouth, UK",
     contactLabel: "Get in touch",
     emailMeLabel: "Email Me",
-    email: "zhoupeng.media\n@outlook.com",
+    email: "zhoupeng.media@outlook.com",
     hello: "Hello ;-)",
     intro: "Welcome to discuss & cooperate.",
     socials: {

@@ -420,12 +420,12 @@ function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                  {/* Email */}
-                  <div className="block p-6 border-2 border-gray-100 dark:border-gray-800 rounded-[2rem] group cursor-default hover:border-orange-500 transition-colors duration-300">
+                  <div className="block p-12 border-2 border-gray-100 dark:border-gray-800 rounded-[2rem] group cursor-default hover:border-orange-500 transition-colors duration-300">
                      <Mail size={48} className="mx-auto mb-6 text-gray-400 group-hover:text-orange-500 transition-colors duration-300" />
                      <h3 className="text-2xl font-bold mb-2 text-black dark:text-white transition-colors duration-300 text-center">
                        {content.emailMeLabel}
                      </h3>
-                     <p className="text-lg opacity-70 text-gray-500 dark:text-gray-400 transition-colors duration-300 select-text">
+                     <p className="text-lg opacity-70 text-gray-500 dark:text-gray-400 transition-colors duration-300 select-text text-center">
                        {content.email}
                      </p>
                   </div>
