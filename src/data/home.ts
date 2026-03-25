@@ -16,24 +16,24 @@ export interface HomeContent {
 export const HOME_DATA: Record<Language, HomeContent> = {
   zh: {
     heroItems: [
-      { text: "摄影摄像", annotation: "（作品积累较多）", category: Category.VIDEO }, // category is kept as VIDEO but UI will split
-      { text: "平面交互", annotation: "（当前主攻）", category: Category.DESIGN },
+      { text: "摄影摄像", annotation: "（日常生活）", category: Category.VIDEO }, // category is kept as VIDEO but UI will split
+      { text: "艺术设计", annotation: "（当前主攻）", category: Category.DESIGN },
       { text: "应用开发", annotation: "（vibe builder）", category: Category.DEV },
-      { text: "炒粉炒饭", annotation: "（还在学）", category: null }
+      { text: "炒面炒饭", annotation: "（还有甜品）", category: null }
     ],
-    intro: "Your personal catchphrase or introduction goes here.",
+    intro: "人生如逆旅，我亦是行人。",
     selectedWorks: "精选作品",
-    years: "[ 20XX — 20XX ]"
+    years: "[ 2022 — 2026 ]"
   },
   en: {
     heroItems: [
-      { text: "Photo & Video", annotation: "(Extensive Portfolio)", category: Category.VIDEO },
-      { text: "Graphic & UI", annotation: "(Main Focus & Passion)", category: Category.DESIGN },
+      { text: "Photo & Video", annotation: "(Daily Life)", category: Category.VIDEO },
+      { text: "Creative Design", annotation: "(Main Focus)", category: Category.DESIGN },
       { text: "Development", annotation: "(Vibe Coder)", category: Category.DEV },
-      { text: "Cooking", annotation: "(Still Learning)", category: null }
+      { text: "Cooking", annotation: "(And Baking)", category: null }
     ],
-    intro: "Your personal catchphrase or introduction goes here.",
+    intro: "And miles to go before I sleep.",
     selectedWorks: "Selected Works",
-    years: "[ 20XX — 20XX ]"
+    years: "[ 2022 — 2026 ]"
   }
 };

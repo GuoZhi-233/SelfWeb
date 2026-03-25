@@ -16,8 +16,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onCategory
   const content = HOME_DATA[language];
   const contactContent = CONTACT_DATA[language];
   const tooltipText = contactContent.tooltip || (language === 'zh' 
-    ? '正在中英两国找工作中...' 
-    : 'Looking for opportunities in China and the UK.');
+    ? '何处工作，何处便是家' 
+    : 'Home is where the work is');
   const heroItems = content.heroItems || [];
   const [showToast, setShowToast] = useState(false);
   const [showLocationTooltip, setShowLocationTooltip] = useState(false);
@@ -173,7 +173,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onCategory
       {/* Floating Toast for Cooking */}
       {showToast && createPortal(
         <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-full shadow-2xl z-[100] animate-fade-in font-bold text-xl">
-           {language === 'zh' ? '还在学... 🍳' : 'Still Learning... 🍳'}
+           {language === 'zh' ? '留学海归技术大厨🍳' : 'World-Class Cuisine 🍳'}
         </div>,
         document.body
       )}
