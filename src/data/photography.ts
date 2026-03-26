@@ -42,7 +42,7 @@ export const PHOTOGRAPHY_GALLERY: Record<string, string[]> = {
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRpZMM17TBvtwp0M44Udp7nwGghtCibgmGovfaI91T7pLl7fLj0hUd20Q/640?wx_fmt=jpeg&from=appmsg#imgIndex=38',
   ],
   'p3': [
-     'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRV80gsapMp0mLIYbClZ5PDhricuhzfFe62fxfB1mhT7QZN8uibibs4qCPg/640?wx_fmt=jpeg&from=appmsg#imgIndex=39',
+     'https://mmbiz.qpic.cn/mmbiz_jpg/o5nTnHEDKUyu6yMyQzmBy6ycdpicZ29LZn4fBD8rGsgakCbhgMyPseQEgj3ZgicHKVh6hn64AkAHF8KocwonlyvV45Qz3tj9ck34G939Aooic4/0?wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRRdOsppqH7A6IaeKjeMcJOpUGgMwiavPkIddAiacBZAy2bwv3aY0ay4Lw/640?wx_fmt=jpeg&from=appmsg#imgIndex=40',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRvGsnUpJicHGVJDK09PnibfdtpXfbAN5IpqwSEPgKz54ycMMx5heAhrpg/640?wx_fmt=jpeg&from=appmsg#imgIndex=41',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRsbMV6vOCW1GcVhBSM5OiaOwkt1iahS6nBDR9Oc0WaR4Rp4hEic2Vq2BUA/640?wx_fmt=jpeg&from=appmsg#imgIndex=42',

@@ -176,7 +176,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ language }) =>
                {language === 'zh' ? '答案错误' : 'Incorrect Answer'}
              </p>
            )}
-           <p className="mt-6 text-sm font-bold text-gray-400 animate-pulse">可以在联系页面找到我\n Find me on contact page</p>
+           <p className="mt-6 text-sm font-bold text-gray-400 animate-pulse">{language === 'zh' ? '可以在联系页面找到我' : 'Find me on contact page'}</p>
         </div>
       </div>
     );
