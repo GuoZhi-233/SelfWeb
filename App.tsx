@@ -434,7 +434,7 @@ function App() {
                  {/* Socials - WeChat */}
                  <div 
                     className="block p-12 border-2 border-gray-100 dark:border-gray-800 rounded-[2rem] hover:border-[#07C160] transition-colors duration-300 group cursor-pointer relative"
-                    onClick={() => window.open('https://mp.weixin.qq.com/s/pIQMdgPpj_ZNdCCOq9WKgg', '_blank')}
+                    onClick={() => window.open('https://mp.weixin.qq.com/s/s2himlWgHigqdcScAUeQkg', '_blank')}
                     onMouseEnter={(e) => {
                        const tooltip = document.getElementById('wechat-tooltip');
                        if (tooltip) {

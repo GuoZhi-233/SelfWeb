@@ -260,7 +260,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ language, ex
                   </div>
 
                   {/* Tags */}
-                  {project.category !== Category.PHOTO && (
+                  {project.tags && project.tags.length > 0 && (
                     <div className="mt-4 flex flex-wrap gap-2 md:gap-3">
                        {project.tags.map(tag => (
                          <span key={tag} className="text-[10px] md:text-xs font-bold font-mono text-gray-400 dark:text-gray-500 uppercase tracking-wider border border-gray-200 dark:border-gray-800 px-2 py-1 rounded-md">#{tag}</span>
