@@ -1,8 +1,8 @@
 export const PHOTOGRAPHY_GALLERY: Record<string, string[]> = {
   'p1': [
-     'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRqulRYy4XYt210iaN4wRicELqA79ywY3mmgyictP5C5NAJb5B9VhavibtMg/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=1',
-     'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRm9VgenUia3hNZn1zVyJXRa01wN9TNpLrjYKqMicfVtqsKZzDibSFAIhHw/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=2',
-     'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRic4LkEVibcTD2G3IRttgN2KbSzvys8SJtxF9tE0uvWAcCJpK8ALibibTRg/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=3',
+     'https://mmbiz.qpic.cn/sz_mmbiz_jpg/b9z0kbvDibr7Z6MrttQiaoR6KwO8YZXloDL8rrprLaicaDCeG4xxJtkVeAB7guLCNiaMic51drX0IToND3MLxicbVJaorSUkBh6tyfFQKslVE7IqY/0?from=appmsg&wxfrom=12&wx_fmt=jpg&tp=webp&usePicPrefetch=1&watermark=1',
+     'https://mmbiz.qpic.cn/sz_mmbiz_jpg/b9z0kbvDibr7k4ozDampFCsI3CT6wOBtoWI7TC43yKOqkCyEWY4vP7fqkvGNuBReiaNvz6iaJvZib0ljSJzQuQhic9lU4X70qaMxc7qsaX4eqxK8/0?from=appmsg&wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1',
+     'https://mmbiz.qpic.cn/mmbiz_jpg/b9z0kbvDibr7xej0qGzicrFISyXCNInuO0TO5QjeYANqdicEaH95faQOrxZFz72HCVIYB5SPRjshiaxia1LYffCvmB9S0mq8bIxQFvBtibQWY0Lib4/0?from=appmsg&wxfrom=12&wx_fmt=jpg&tp=webp&watermark=1',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRTPMPPVUd2UB9mOFajUubGKP54oicmK6yPmWNOibJicwJqp3QOm5dtmXtw/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=4',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRVVYAaC0icgZdgsl3ic1SuDqQdyXzXSGBwlwdB0IYYNqrmKfW9Nx2ADHg/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=5',
      'https://mmbiz.qpic.cn/mmbiz_jpg/MpZIibj0bjSym38IftGicAWNwhwavzH9hRIKL9BIL6rECY76faHHZHlGibzvVzy59s15aTcoAkRB9Kp6ibUQo4ZkCA/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=6',
