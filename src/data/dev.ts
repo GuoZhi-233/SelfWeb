@@ -6,8 +6,8 @@ export const DEV_DATA: Project[] = [
     common: {
       category: 'Development',
       image: '', // Placeholder
-      icon: 'message-circle',
-      websiteUrl: '',
+      icon: 'wind',
+      websiteUrl: 'https://www.figma.com/design/7uO79qn3juVXz5lEMM0RGH/AR-APP-Slide?node-id=0-1&t=T4SfEDVYp5EqWi9a-1',
       githubUrl: ''
     },
     zh: {
