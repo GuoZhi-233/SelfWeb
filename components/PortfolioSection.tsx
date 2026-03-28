@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import { PROJECTS, CATEGORY_LABELS } from '../constants';
 import { Category, Language, Project } from '../types';
 import { PHOTOGRAPHY_GALLERY } from '../src/data/photography';
-import { ArrowUpRight, X, Terminal, MessageCircle, IdCard, Github, ExternalLink, ChevronLeft, ChevronRight, FileText, Film, Wind } from 'lucide-react';
+import { ArrowUpRight, X, Terminal, MessageCircle, IdCard, Github, ExternalLink, ChevronLeft, ChevronRight, FileText, Film, Wind, Image as ImageIcon } from 'lucide-react';
 
 interface PortfolioSectionProps {
   language: Language;
@@ -186,6 +186,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ language, ex
                     {project.icon === 'file-text' && <FileText size={32} />}
                     {project.icon === 'film' && <Film size={32} />}
                     {project.icon === 'wind' && <Wind size={32} />}
+                    {project.icon === 'image' && <ImageIcon size={32} />}
                     {!project.icon && <Terminal size={32} />}
                   </div>
                   <h3 className="text-2xl font-black text-black dark:text-white mb-3">

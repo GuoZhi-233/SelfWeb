@@ -59,8 +59,36 @@ export const DESIGN_DATA: Project[] = [
       roleDetail: "Binding model actions and modifying models, cloth simulation, and final rendering. (Used models and actions with the author's permission)"
     }
   },
-    {
+      {
     id: 'd3',
+    common: {
+      category: 'Graphics & UI',
+      image: 'https://i0.hdslb.com/bfs/archive/fb42389f79b0019b5e8558e30af29e237088ac86.jpg@672w_378h_1c_!web-search-common-cover.avif',
+      figmaUrl: '', 
+      bilibiliId: 'BV15pXVB8Ehb',
+      gallery: ['']
+    },
+    zh: {
+      title: 'Houdini 程序化环境生成与 Nuke 节点化合成',
+      subtitle: '复杂系统学习与完整工作流 (Pipeline) 探索',
+      description: '这是一个基于 Houdini 和 Nuke 的综合技术验证项目。重点在于跑通从程序化地形生成、基础物理解算，到多通道 (AOV) 后期合成的完整底层逻辑。受限于当时的硬件算力，最终验证视频为 480P，但核心展示了对复杂节点树的架构与统筹能力。',
+      role: '个人制作 (实拍人物素材源自课程提供)',
+      tags: ['逻辑拆解', '节点式工作流', 'Houdini', 'Nuke', '快速学习'],
+      concept: '尽管我未来的主攻方向并非纯视觉特效，但 Houdini 极高的底层抽象维度使其成为锻炼“系统性思维”的绝佳试炼场。在这个项目中，我将重点放在了技术逻辑的攻坚上——无论是用数学节点驱动雪山的程序化生成，还是在 Nuke 中梳理错综复杂的层级合成树。这次跨软件的 Pipeline 探索，极大地验证并提升了我面对陌生、高门槛工具时的快速自学与问题拆解能力。',
+      roleDetail: '负责 Houdini 节点化雪山地形 (HeightField) 的搭建与物理属性解算，制定多通道 (AOV) 渲染输出策略；并在 Nuke 中完成实拍人物抠像 (Keying)、深度信息处理、色彩匹配及复杂节点的最终合成逻辑。'
+    },
+    en: {
+      title: 'Procedural Environment & Node-based Compositing (Houdini & Nuke)',
+      subtitle: 'Pipeline Exploration & Complex Systems Learning',
+      description: 'A comprehensive technical practice focusing on a complete CGI pipeline—from procedural terrain generation and dynamics in Houdini to multi-pass (AOV) compositing in Nuke. Due to hardware rendering constraints, the final output is 480P, emphasizing the underlying node architecture and logical problem-solving over high-res visual fidelity.',
+      role: 'Individual Project (Live-action footage provided by the course)',
+      tags: ['Systems Thinking', 'Node-based Workflow', 'Houdini', 'Nuke', 'Fast Learner'],
+      concept: 'Although my primary career focus is not purely in Visual Effects (VFX), I tackled Houdini—known for its steep learning curve—as a rigorous exercise in systems thinking and logic structure. By driving procedural generation with mathematical nodes and managing a highly complex compositing tree in Nuke, I treated this project as a test of my adaptability. It stands as strong proof of my ability to rapidly learn highly technical tools, deconstruct complex workflows, and solve problems within an unfamiliar software ecosystem.',
+      roleDetail: 'Responsible for procedural snow mountain generation (HeightField) and dynamic simulations in Houdini; configured multi-pass (AOV) rendering strategies. In Nuke, executed live-action keying, depth-of-field processing, color grading, and managed the overarching node-based compositing logic.'
+    }
+  },
+    {
+    id: 'd4',
     common: {
       category: 'Graphics & UI',
       image: 'https://www.figma.com/file/jJu59XIkQW5HifNfEpTNC3/thumbnail',
@@ -68,7 +96,7 @@ export const DESIGN_DATA: Project[] = [
       gallery: ['']
     },
     zh: {
-      title: 'Slide设计',
+      title: 'Slide设计01',
       subtitle: '平面设计',
       description: '优衣库品牌分析的Slide，结合极简符号与优衣库logo的红色设计。',
       role: '版式设计',
@@ -78,7 +106,7 @@ export const DESIGN_DATA: Project[] = [
       roleDetail: "独立完成从资讯收集到最终排版设计。"
     },
     en: {
-      title: 'Slide Design',
+      title: 'Slide Design 01',
       subtitle: 'Graphic Design',
       description: 'Slide design for Uniqlo brand analysis, combining minimalist symbols with the brand\'s red logo.',
       role: 'Layout Design',
@@ -86,6 +114,35 @@ export const DESIGN_DATA: Project[] = [
       awards: ["Excellent Course Presentation Award"],
       concept: "Uniqlo, as a fast-fashion brand, has a minimalist style and store design that deeply attracted me. Therefore, in the design, I chose a minimalist design style and brand colors to match Uniqlo's brand identity while highlighting the professionalism of the content.",
       roleDetail: "Independently completed the entire process from information gathering to final layout design."
+    }
+  },
+      {
+    id: 'd5',
+    common: {
+      category: 'Graphics & UI',
+      image: 'https://www.figma.com/file/J1cgerdP56LsomJxw7Pczp/thumbnail',
+      figmaUrl: 'https://www.figma.com/deck/J1cgerdP56LsomJxw7Pczp/PSE-4-Weeks-Personal-Summary---Classmates-Feedback?node-id=1-42&t=MpKpFtEQqzeMiUiT-1', 
+      gallery: ['']
+    },
+    zh: {
+      title: 'Slide设计02',
+      subtitle: '平面设计',
+      description: '论文写作课总结的Slide，结合极简符号与绿色护眼设计。',
+      role: '版式设计',
+      tags: ['PPT', '总结', 'Figma'],
+      awards: ["课程汇报优秀作品"],
+      concept: "因为想更深入学习英文的学术论文写作，所以加餐了这门课。总结的Slide设计上，我选择了极简的设计风格与绿色护眼配色，以突出内容的专业性，同时营造一个清新、舒适的视觉体验，帮助观众更好地吸收信息。",
+      roleDetail: "总结归纳老师的分散知识点，并进行分类与排版设计。"
+    },
+    en: {
+      title: 'Slide Design 02',
+      subtitle: 'Graphic Design',
+      description: 'Slide design for a course summary on academic writing, combining minimalist symbols with eye-friendly green design.',
+      role: 'Layout Design',
+      tags: ['PPT', 'Summary', 'Figma'],
+      awards: ["Excellent Course Presentation Award"],
+      concept: "To further study English academic writing, I took this additional course. In the slide design for the summary, I chose a minimalist design style with eye-friendly green colors to highlight the professionalism of the content while creating a fresh and comfortable visual experience, helping the audience better absorb the information.",
+      roleDetail: "Summarized and categorized the teacher's scattered knowledge points, and designed the layout accordingly."
     }
   },
   // Add more design projects here

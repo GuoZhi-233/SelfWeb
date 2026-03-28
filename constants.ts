@@ -9,14 +9,14 @@ export const CATEGORY_LABELS: Record<Language, Record<string, string>> = {
     'Videography': '动态影像', // Renamed
     'Graphics & UI': '艺术设计',
     'Photography': '静态摄影', // Renamed
-    'Development': '应用开发'
+    'Development': '应用开发',
   },
   en: {
     'All': 'All',
     'Videography': 'Videography',
     'Graphics & UI': 'Creative Design',
     'Photography': 'Photography',
-    'Development': 'Development'
+    'Development': 'Development',
   }
 };
 

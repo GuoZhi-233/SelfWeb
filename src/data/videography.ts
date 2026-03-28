@@ -28,5 +28,33 @@ export const VIDEOGRAPHY_DATA: Project[] = [
       concept: "",
       roleDetail: "From script ideation and material gathering to video editing, I independently handled the entire process from content creation to post-production."
     }
+  },
+    {
+    id: 'sample-2',
+    common: {
+      category: 'Videography',
+      image: 'https://i0.hdslb.com/bfs/archive/6161a2074c5363758bc662866c3858a5efe01f23.jpg@672w_378h_1c.avif',
+      bilibiliId: 'BV19WXVBZEim' // For video
+    },
+    zh: {
+      title: '河，海，与远方',
+      subtitle: '记录和朋友在日本的夏天',
+      description: '使用大疆pocket3拍摄的轻量型vlog。',
+      role: '个人项目',
+      tags: ['vlog', '游记','剪辑'],
+      awards: [''],
+      concept: "",
+      roleDetail: ""
+    },
+    en: {
+      title: 'River, Sea, and Beyond',
+      subtitle: 'Recording summer in Japan with friends',
+      description: 'A lightweight vlog shot with DJI Pocket 3.',
+      role: 'Personal Project',
+      tags: ['Vlog', 'Travelogue', 'Editing'],
+      awards: [''],
+      concept: "",
+      roleDetail: ""
+    }
   }
 ];
