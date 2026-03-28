@@ -199,7 +199,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     zh: {
       title: 'Vol.∞ 创作现场',
       subtitle: '',
-      description: '记录我走过的路。每一张照片都是一枚坐标，连接起我的专业技能与对这个世界永无止境的好奇心',
+      description: '记录我走过的路-每一张照片都是一枚坐标，连接起我的专业技能与对这个世界永无止境的好奇心。',
       role: '',
       tags: ['摄影', '自我历程'],
       awards: [],
