@@ -91,7 +91,7 @@ export const DESIGN_DATA: Project[] = [
     id: 'd4',
     common: {
       category: 'Graphics & UI',
-      image: 'https://i1.hdslb.com/bfs/archive/46bd081e277692fbcdc40f9fa21171e45c74d61c.jpg@256w_144h_1c.avif',
+      image: 'https://i2.hdslb.com/bfs/archive/46bd081e277692fbcdc40f9fa21171e45c74d61c.jpg@672w_378h_1c_!web-search-common-cover.avif',
       figmaUrl: '', 
       gallery: [''],
       bilibiliId: 'BV19mX5BwE2R'

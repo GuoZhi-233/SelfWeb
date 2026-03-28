@@ -31,6 +31,9 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ initialVisible = false
   const loadingTimerRef = useRef<NodeJS.Timeout | null>(null);
   const currentSong = MUSIC_PLAYLIST[currentSongIndex];
 
+  // iOS Safari does not allow programmatic audio volume changes
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
+
   const [hasInteracted, setHasInteracted] = useState(false);
 
   // Persistence
@@ -100,6 +103,27 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ initialVisible = false
   useEffect(() => {
     if (audioRef.current) {
       const audio = audioRef.current;
+
+      // iOS Safari: audio.volume is read-only, skip fade and directly play/pause
+      if (isIOS) {
+        if (fadeIntervalRef.current) {
+          clearInterval(fadeIntervalRef.current);
+          fadeIntervalRef.current = null;
+        }
+        if (isPlaying && audio.paused) {
+          const playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              console.log("Autoplay prevented:", error);
+              setIsPlaying(false);
+            });
+          }
+        } else if (!isPlaying && !audio.paused) {
+          audio.pause();
+        }
+        return;
+      }
+
       const targetVolume = isMuted ? 0 : volume;
       const finalTarget = isPlaying ? targetVolume : 0;
 
@@ -399,18 +423,27 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ initialVisible = false
 
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex-1">
-                    <ElasticSlider 
-                      leftIcon={
-                        <button onClick={() => setIsMuted(!isMuted)} className="text-white/70 hover:text-white transition-colors">
-                          {isMuted || volume === 0 ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-                        </button>
-                      }
-                      value={(isMuted ? 0 : Math.sqrt(volume)) * 1000}
-                      maxValue={1000}
-                      isStepped
-                      stepSize={10}
-                      onChange={handleVolumeSliderChange}
-                    />
+                    {isIOS ? (
+                      <div className="flex items-center gap-2 px-1">
+                        <Volume2 className="w-4 h-4 text-white/50 shrink-0" />
+                        <span className="text-[10px] text-white/50">
+                          {language === 'zh' ? '音量由系统控制' : 'Use system volume'}
+                        </span>
+                      </div>
+                    ) : (
+                      <ElasticSlider 
+                        leftIcon={
+                          <button onClick={() => setIsMuted(!isMuted)} className="text-white/70 hover:text-white transition-colors">
+                            {isMuted || volume === 0 ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                          </button>
+                        }
+                        value={(isMuted ? 0 : Math.sqrt(volume)) * 1000}
+                        maxValue={1000}
+                        isStepped
+                        stepSize={10}
+                        onChange={handleVolumeSliderChange}
+                      />
+                    )}
                   </div>
 
                   <div className="flex items-center gap-4 shrink-0">
