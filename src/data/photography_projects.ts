@@ -54,5 +54,32 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
       concept: "",
       roleDetail: ""
     }
-  }
+  },
+    {
+    id: 'p3',
+    common: {
+      category: Category.PHOTO,
+      image: 'https://mmbiz.qpic.cn/sz_mmbiz_jpg/b9z0kbvDibr5mMsteFtZnbvQdCUWvKse0ptA234HuKb0WicwWWbX2IXrWSj7Z8nyYT9iaZoaHJP6VD1l1S7NYullYzpQo07YPlpyZfmqVibJpvQ/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=9',
+    },
+    zh: {
+      title: 'Vol.03 浮生半日',
+      subtitle: '',
+      description: '记录日常生活的琐碎与美好，在平凡的生活中，发现生命最动人的节奏。',
+      role: '',
+      tags: ['摄影', '人文'],
+      awards: [],
+      concept: "",
+      roleDetail: ""
+    },
+    en: {
+      title: 'Vol.03 A Slice of Life',
+      subtitle: '',
+      description: 'Recording the trivialities and beauties of daily life, discovering the most touching rhythms of life in the ordinary.',
+      role: '',
+      tags: ['Photography', 'Humanities'],
+      awards: [],
+      concept: "",
+      roleDetail: ""
+    }
+  },
 ];

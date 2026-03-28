@@ -7,7 +7,7 @@ export const DEV_DATA: Project[] = [
       category: 'Development',
       image: '', // Placeholder
       icon: 'wind',
-      websiteUrl: 'https://www.figma.com/design/7uO79qn3juVXz5lEMM0RGH/AR-APP-Slide?node-id=0-1&t=T4SfEDVYp5EqWi9a-1',
+      websiteUrl: 'https://www.figma.com/proto/7uO79qn3juVXz5lEMM0RGH/AR-APP-Slide?node-id=0-1&t=T4SfEDVYp5EqWi9a-1',
       githubUrl: ''
     },
     zh: {

@@ -10,8 +10,8 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     },
     zh: {
       title: '新加坡日本旅游记',
-      subtitle: '猫meme怎能不算是一种纪实',
-      description: '学习时间空余剪辑的猫meme旅游视频。',
+      subtitle: '猫meme怎能不算是一种动态影像记录呢',
+      description: '学习时间外剪辑的猫meme旅游视频。',
       role: '个人项目',
       tags: ['猫meme', '游记','剪辑'],
       awards: ['综合播放量20K+'],
@@ -20,7 +20,7 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     },
     en: {
       title: 'Singapore & Japan Travelogue',
-      subtitle: 'Cat memes could be a form of documentary LoL',
+      subtitle: 'Cat memes could be a form of dynamic visual storytelling LoL',
       description: 'A cat meme travel video edited during my free time.',
       role: 'Personal Project',
       tags: ['Cat Memes', 'Travelogue', 'Editing'],
