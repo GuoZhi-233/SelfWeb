@@ -67,8 +67,8 @@ roleDetail: "Driven by the 'Vibe Coding' paradigm, I led the product definition 
       bilibiliId: 'BV19mX5BwE2R'
     },
     zh: {
-     title: 'MoBu 动捕数据配置与 UE5 动画重定向管线',
-       subtitle: '底层骨架逻辑解析与现代引擎重定向 (Retargeting) 工作流探索',
+      title: 'MotionBuilder 动捕数据配置与 UE5 动画重定向管线',
+       subtitle: '动作捕捉 / Shogun / MotionBuilder / Unreal Engine 5',
        description: '这是一个基于 MotionBuilder 和 Unreal Engine 5 的简短动捕动画管线验证项目。',
        role: '个人制作',
        tags:[ 'MotionBuilder', 'UE5', 'Retargeting (重定向)'],
@@ -77,7 +77,7 @@ roleDetail: "Driven by the 'Vibe Coding' paradigm, I led the product definition 
     },
     en: {
       title: 'MotionBuilder Motion Capture Data Configuration & UE5 Animation Retargeting Pipeline',
-      subtitle: 'Skeleton Logic Analysis & Modern Engine Retargeting Workflow Exploration',
+      subtitle: 'Mocap / Shogun / MotionBuilder / Unreal Engine 5',
       description: 'A concise motion capture animation pipeline validation project based on MotionBuilder and Unreal Engine 5.',
       role: 'Individual Project',
       tags: ['MotionBuilder', 'UE5', 'Retargeting'],
