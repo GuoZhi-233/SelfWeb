@@ -97,20 +97,20 @@ export const DESIGN_DATA: Project[] = [
       gallery: ['']
     },
     zh: {
-       title: 'MotionBuilder 动捕数据清理与 UE5 动画重定向管线',
-  subtitle: '底层骨架逻辑解析与现代引擎重定向 (Retargeting) 工作流探索',
-  description: '这是一个基于 MotionBuilder 和 Unreal Engine 5 的简短动捕动画管线验证项目。',
-  role: '个人制作',
-  tags:[ 'MotionBuilder', 'UE5', '动捕数据清理', 'Retargeting (重定向)'],
-  concept: '完整流程择日放出，Shogun数据提取-清理→导出.fbx至mobu整理-配置character-将UE的人物导出至mobu，在mobu中重新绑定骨骼并渲染动画→导入进UE5',
-  roleDetail: '动捕棚录制-数据清理-骨骼重建-动画烘焙-UE5重定向配置-最终动画效果实现。(动捕原始数据源自课程/开源素材)'
+       title: 'MoBu 动捕数据配置与 UE5 动画重定向管线',
+       subtitle: '底层骨架逻辑解析与现代引擎重定向 (Retargeting) 工作流探索',
+       description: '这是一个基于 MotionBuilder 和 Unreal Engine 5 的简短动捕动画管线验证项目。',
+       role: '个人制作',
+       tags:[ 'MotionBuilder', 'UE5', 'Retargeting (重定向)'],
+       concept: '完整流程择日放出，Shogun数据提取-清理→导出.fbx至mobu整理-配置character-将UE的人物导出至mobu，在mobu中重新绑定骨骼并渲染动画→导入进UE5',
+       roleDetail: '动捕棚录制-数据清理-骨骼重建-动画烘焙-UE5重定向配置-最终动画效果实现。(动捕原始数据源自课程/开源素材)'
     },
     en: {
-      title: 'MotionBuilder Motion Capture Data Cleaning & UE5 Animation Retargeting Pipeline',
+      title: 'MotionBuilder Motion Capture Data Configuration & UE5 Animation Retargeting Pipeline',
       subtitle: 'Skeleton Logic Analysis & Modern Engine Retargeting Workflow Exploration',
       description: 'A concise motion capture animation pipeline validation project based on MotionBuilder and Unreal Engine 5.',
       role: 'Individual Project',
-      tags: ['MotionBuilder', 'UE5', 'Motion Capture Data Cleaning', 'Retargeting'],
+      tags: ['MotionBuilder', 'UE5', 'Retargeting'],
       concept: 'The complete process will be released at a later date. It involves extracting and cleaning motion capture data using Shogun, exporting it as .fbx to MotionBuilder for organization and character configuration, re-binding the skeleton in MotionBuilder and rendering the animation, and finally importing it into UE5 for retargeting.',
       roleDetail: 'Motion capture recording, data cleaning, skeleton reconstruction, animation baking, UE5 retargeting configuration, and final animation implementation. (Original motion capture data sourced from the course/open-source materials)'
     }
