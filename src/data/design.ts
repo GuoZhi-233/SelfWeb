@@ -87,8 +87,36 @@ export const DESIGN_DATA: Project[] = [
       roleDetail: 'Responsible for procedural snow mountain generation (HeightField) and dynamic simulations in Houdini; configured multi-pass (AOV) rendering strategies. In Nuke, executed live-action keying, depth-of-field processing, color grading, and managed the overarching node-based compositing logic.'
     }
   },
-    {
+        {
     id: 'd4',
+    common: {
+      category: 'Graphics & UI',
+      image: 'https://i0.hdslb.com/bfs/archive/46bd081e277692fbcdc40f9fa21171e45c74d61c.jpg@672w_378h_1c.avif',
+      figmaUrl: '', 
+      bilibiliId: 'BV19mX5BwE2R',
+      gallery: ['']
+    },
+    zh: {
+       title: 'MotionBuilder 动捕数据清理与 UE5 动画重定向管线',
+  subtitle: '底层骨架逻辑解析与现代引擎重定向 (Retargeting) 工作流探索',
+  description: '这是一个基于 MotionBuilder 和 Unreal Engine 5 的简短动捕动画管线验证项目。',
+  role: '个人制作',
+  tags:[ 'MotionBuilder', 'UE5', '动捕数据清理', 'Retargeting (重定向)'],
+  concept: '完整流程择日放出，Shogun数据提取-清理→导出.fbx至mobu整理-配置character-将UE的人物导出至mobu，在mobu中重新绑定骨骼并渲染动画→导入进UE5',
+  roleDetail: '动捕棚录制-数据清理-骨骼重建-动画烘焙-UE5重定向配置-最终动画效果实现。(动捕原始数据源自课程/开源素材)'
+    },
+    en: {
+      title: 'MotionBuilder Motion Capture Data Cleaning & UE5 Animation Retargeting Pipeline',
+      subtitle: 'Skeleton Logic Analysis & Modern Engine Retargeting Workflow Exploration',
+      description: 'A concise motion capture animation pipeline validation project based on MotionBuilder and Unreal Engine 5.',
+      role: 'Individual Project',
+      tags: ['MotionBuilder', 'UE5', 'Motion Capture Data Cleaning', 'Retargeting'],
+      concept: 'The complete process will be released at a later date. It involves extracting and cleaning motion capture data using Shogun, exporting it as .fbx to MotionBuilder for organization and character configuration, re-binding the skeleton in MotionBuilder and rendering the animation, and finally importing it into UE5 for retargeting.',
+      roleDetail: 'Motion capture recording, data cleaning, skeleton reconstruction, animation baking, UE5 retargeting configuration, and final animation implementation. (Original motion capture data sourced from the course/open-source materials)'
+    }
+  },
+    {
+    id: 'd5',
     common: {
       category: 'Graphics & UI',
       image: 'https://www.figma.com/file/jJu59XIkQW5HifNfEpTNC3/thumbnail',
@@ -117,7 +145,7 @@ export const DESIGN_DATA: Project[] = [
     }
   },
       {
-    id: 'd5',
+    id: 'd6',
     common: {
       category: 'Graphics & UI',
       image: 'https://www.figma.com/file/J1cgerdP56LsomJxw7Pczp/thumbnail',
