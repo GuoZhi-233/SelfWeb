@@ -23,12 +23,12 @@ export const DESIGN_DATA: Project[] = [
     en: {
       title: 'Fan-made 2D Animated Music Video (After Effects)',
       subtitle: 'VFX',
-      description: '(VFX design project) A 2D animated music video created using After Effects, incorporating elements from Persona 3 Reload and artistic concepts.',
+      description: 'A VFX design project: a 2D animated music video made in After Effects, inspired by Persona 3 Reload and its visual themes.',
       role: 'Solo Production',
-      tags: ['VFX', 'After Effects', 'AGC'],
+      tags: ['VFX', 'After Effects', 'ACG'],
       awards: ["Excellent Course Project","30K+ views"],
-      concept: "I was deeply moved by the storyline of P3R while learning motion effects. I created this video based on my personal understanding of a series of elements in the game, such as the crucial concept of time and the representative color blue (also, highly recommend this game).",
-      roleDetail: "Independently completed the entire process from material collection to final animation design. (Used free online materials and game music)"
+      concept: "While learning motion design, I was deeply moved by P3R's story. I built this piece around key motifs from the game, especially the theme of time and its iconic blue palette. It is also a personal tribute to a game that deeply inspired me.",
+      roleDetail: "Handled the full pipeline independently, from sourcing assets to final animation. (Uses free online assets and in-game music.)"
     }
   },
     {
@@ -52,11 +52,11 @@ export const DESIGN_DATA: Project[] = [
     en: {
       title: 'High-Performance Cloth Simulation with Style3D',
       subtitle: 'Cloth Simulation',
-      description: 'Style3D Atelier Cloth Solver and Blender Integrated Rendering. The model was provided by my friend Tira (developer and streamer of the 3D motion capture software ‘Warudo’), and I would like to thank him for providing the model resources.',
+      description: 'A cloth-simulation workflow combining Style3D Atelier with final rendering in Blender. The character model was provided by my friend Tira (developer and streamer of the 3D mocap software Warudo).',
       role: 'Solo Production',
       tags: ['Cloth Simulation', 'Style3D', 'Blender'],
-      concept: "Cloth simulation has always been a field of great interest to me. The cloth solver feature of Style3D Atelier provided an excellent opportunity for me to explore it in depth. In this project, I used Style3D Atelier for cloth simulation and imported the results into Blender for integrated rendering to achieve high-quality visual effects.",
-      roleDetail: "Binding model actions and modifying models, cloth simulation, and final rendering. (Used models and actions with the author's permission)"
+      concept: "Cloth simulation has always been one of my core interests. This project let me dive deep into Style3D Atelier's solver, then move the results into Blender for look development and final output.",
+      roleDetail: "Handled rig/action setup, model adjustments, cloth simulation, and final rendering. (All models and motion data used with permission.)"
     }
   },
       {
@@ -80,11 +80,11 @@ export const DESIGN_DATA: Project[] = [
     en: {
       title: 'Procedural Environment & Node-based Compositing (Houdini & Nuke)',
       subtitle: 'Pipeline Exploration & Complex Systems Learning',
-      description: 'A comprehensive technical practice focusing on a complete CGI pipeline—from procedural terrain generation and dynamics in Houdini to multi-pass (AOV) compositing in Nuke. Due to hardware rendering constraints, the final output is 480P, emphasizing the underlying node architecture and logical problem-solving over high-res visual fidelity.',
+      description: 'A full-pipeline technical study, from procedural terrain and dynamics in Houdini to multi-pass (AOV) compositing in Nuke. Due to hardware limits, the final output is 480p, with the focus placed on node architecture and problem solving rather than resolution.',
       role: 'Individual Project (Live-action footage provided by the course)',
       tags: ['Systems Thinking', 'Node-based Workflow', 'Houdini', 'Nuke', 'Fast Learner'],
-      concept: 'Although my primary career focus is not purely in Visual Effects (VFX), I tackled Houdini—known for its steep learning curve—as a rigorous exercise in systems thinking and logic structure. By driving procedural generation with mathematical nodes and managing a highly complex compositing tree in Nuke, I treated this project as a test of my adaptability. It stands as strong proof of my ability to rapidly learn highly technical tools, deconstruct complex workflows, and solve problems within an unfamiliar software ecosystem.',
-      roleDetail: 'Responsible for procedural snow mountain generation (HeightField) and dynamic simulations in Houdini; configured multi-pass (AOV) rendering strategies. In Nuke, executed live-action keying, depth-of-field processing, color grading, and managed the overarching node-based compositing logic.'
+      concept: 'Although VFX is not my only long-term focus, I used Houdini as a deliberate training ground for systems thinking. Building procedural terrain with math-driven nodes and managing a complex Nuke tree became a practical test of adaptability, rapid learning, and workflow decomposition in unfamiliar tools.',
+      roleDetail: 'Built procedural snow-mountain terrain (HeightField) and dynamics in Houdini, and designed the multi-pass (AOV) render strategy. In Nuke, handled keying, depth treatment, colour matching, and final node-based compositing.'
     }
   },
       {
@@ -102,18 +102,18 @@ export const DESIGN_DATA: Project[] = [
     description: '本项目完整演示了动作捕捉的工业级标准管线，涵盖从光学原始数据采集到游戏引擎最终表现的全过程。',
     role: '个人制作',
     tags: ['Vicon Shogun', 'MotionBuilder', 'UE5', 'Retargeting (重定向)', 'Data Cleanup'],
-    concept: '全流程技术展示：在 Vicon Shogun 中进行原始数据提取与清理（Gap Filling）；在 MotionBuilder 中完成角色配置（Characterization）、骨骼重映射（Skeleton Mapping）与动画烘焙（Plotting）；最终导入 Unreal Engine 5 进行 IK Retargeter 配置与效果验证。',
+    concept: '全流程技术展示：在 Vicon Shogun 中进行原始数据提取与清理（Gap Filling）；在 MotionBuilder 中完成角色配置（Characterisation）、骨骼重映射（Skeleton Mapping）与动画烘焙（Plotting）；最终导入 Unreal Engine 5 进行 IK Retargeter 配置与效果验证。',
     roleDetail: '负责全流程实施：动捕棚现场录制、原始光学数据清理（断帧修复/标签校对）、骨骼解算与重建、动画数据烘焙、UE5 重定向管线搭建及最终动画效果实现。（原始数据源自课程/开源素材）'
     },
 
     en: {
       title: 'End-to-End Mocap Pipeline: Data Processing & Retargeting from Vicon Shogun to UE5',
     subtitle: 'Motion Capture (Full Pipeline)',
-    description: 'A comprehensive technical verification project demonstrating the industry-standard motion capture workflow, from raw optical data acquisition to final engine integration.',
+    description: 'A technical validation project demonstrating an industry-standard motion-capture workflow, from raw optical capture to final in-engine output.',
     role: 'Solo Project',
     tags: ['Vicon Shogun', 'MotionBuilder', 'UE5', 'Retargeting', 'Data Cleanup'],
-    concept: 'Full pipeline demonstration: Raw data extraction and cleanup (Gap Filling) in Vicon Shogun; Characterization, skeleton remapping, and animation plotting in MotionBuilder; Final IK Retargeter configuration and performance verification within Unreal Engine 5.',
-    roleDetail: 'Responsible for the entire lifecycle: On-site recording, raw optical data cleaning (Labeling/Gap Filling), skeleton solving and reconstruction, animation baking, UE5 retargeting pipeline setup, and final in-engine implementation. (Raw data sourced from course/open-source materials)',
+    concept: 'End-to-end pipeline demo: raw data extraction and cleanup (gap filling) in Vicon Shogun, characterisation and animation plotting in MotionBuilder, then IK Retargeter setup and validation in Unreal Engine 5.',
+    roleDetail: 'Owned the full lifecycle: on-site capture, optical-data cleanup (labelling and gap filling), skeleton solving/reconstruction, animation baking, UE5 retargeting setup, and final in-engine validation. (Raw data sourced from course and open-source materials.)',
    }
   },
     {
@@ -137,12 +137,12 @@ export const DESIGN_DATA: Project[] = [
     en: {
       title: 'Slide Design 01',
       subtitle: 'Graphic Design',
-      description: 'Slide design for Uniqlo brand analysis, combining minimalist symbols with the brand\'s red logo.',
+      description: 'A slide deck for a Uniqlo brand analysis, combining minimalist visual language with the brand\'s signature red.',
       role: 'Layout Design',
       tags: ['PPT', 'Brand', 'Figma'],
       awards: ["Excellent Course Presentation Award"],
-      concept: "Uniqlo, as a fast-fashion brand, has a minimalist style and store design that deeply attracted me. Therefore, in the design, I chose a minimalist design style and brand colors to match Uniqlo's brand identity while highlighting the professionalism of the content.",
-      roleDetail: "Independently completed the entire process from information gathering to final layout design."
+      concept: "I was drawn to Uniqlo's minimalist retail language, so I built the deck around that same restraint. The layout and colour choices align with the brand identity while keeping the content clear and professional.",
+      roleDetail: "Completed the full process independently, from research and content structuring to final slide layout."
     }
   },
       {
@@ -166,12 +166,12 @@ export const DESIGN_DATA: Project[] = [
     en: {
       title: 'Slide Design 02',
       subtitle: 'Graphic Design',
-      description: 'Slide design for a course summary on academic writing, combining minimalist symbols with eye-friendly green design.',
+      description: 'A summary deck for an academic writing course, using minimalist structure and an eye-friendly green palette.',
       role: 'Layout Design',
       tags: ['PPT', 'Summary', 'Figma'],
       awards: ["Excellent Course Presentation Award"],
-      concept: "To further study English academic writing, I took this additional course. In the slide design for the summary, I chose a minimalist design style with eye-friendly green colors to highlight the professionalism of the content while creating a fresh and comfortable visual experience, helping the audience better absorb the information.",
-      roleDetail: "Summarized and categorized the teacher's scattered knowledge points, and designed the layout accordingly."
+      concept: "I took this extra course to strengthen my English academic writing. For the summary deck, I used a clean minimalist layout and a soft green palette to keep the presentation professional, readable, and easy to follow.",
+      roleDetail: "Synthesized scattered course points into clear categories and translated them into a structured visual layout."
     }
   },
   // Add more design projects here

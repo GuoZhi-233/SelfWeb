@@ -20,13 +20,13 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     },
     en: {
       title: 'Singapore & Japan Travelogue',
-      subtitle: 'Cat memes could be a form of dynamic visual storytelling LoL',
+      subtitle: 'Proving that cat memes can be visual storytelling',
       description: 'A cat meme travel video edited during my free time.',
       role: 'Personal Project',
       tags: ['Cat Memes', 'Travelogue', 'Editing'],
       awards: ['20K+ total views' ],
       concept: "",
-      roleDetail: "From script ideation and material gathering to video editing, I independently handled the entire process from content creation to post-production."
+      roleDetail: "From concept drafting and asset collection to editing and finishing, I handled the entire production pipeline independently."
     }
   },
     {
@@ -48,7 +48,7 @@ export const VIDEOGRAPHY_DATA: Project[] = [
     },
     en: {
       title: 'River, Sea, and Beyond',
-      subtitle: 'Recording summer in Japan with friends',
+      subtitle: 'A summer in Japan with friends',
       description: 'A lightweight vlog shot with DJI Pocket 3.',
       role: 'Personal Project',
       tags: ['Vlog', 'Travelogue', 'Editing'],

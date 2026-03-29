@@ -20,7 +20,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.01 Pure Gastronomy',
       subtitle: 'Taste',
-      description: 'Whether traveling alone or gathering with friends, there is always delicious food by your side.',
+      description: 'Whether I\'m travelling solo or meeting friends, good food is always part of the story.',
       role: '',
       tags: ['Photography', 'Food'],
       awards: [],
@@ -47,7 +47,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.02 Kingdom of Wilderness',
       subtitle: '',
-      description: 'Land, sea, and sky form the world we live in, and they also shape the world within us.',
+      description: 'Land, sea, and sky shape both the world we inhabit and the world inside us.',
       role: '',
       tags: ['Photography', 'Nature'],
       awards: [],
@@ -74,9 +74,9 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.03 A Slice of Life',
       subtitle: '',
-      description: 'Recording the trivialities and beauties of daily life, discovering the most touching rhythms of life in the ordinary.',
+      description: 'A record of daily details and quiet beauty, finding emotional rhythm in ordinary moments.',
       role: '',
-      tags: ['Photography', 'Humanities'],
+      tags: ['Photography', 'Human Interest'],
       awards: [],
       concept: "",
       roleDetail: ""
@@ -101,7 +101,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.04 Spirits of Life',
       subtitle: '',
-      description: 'In the quiet moments, gazing at the creatures, capturing the pure emotions that need no words but touch the heart directly.',
+      description: 'In still moments with animals, I capture emotions that need no words yet land directly in the heart.',
       role: '',
       tags: ['Photography', 'Animals'],
       awards: [],
@@ -128,7 +128,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.05 Paths to Elsewhere',
       subtitle: '',
-      description: 'Recording vehicles, lonely stations, and the scenery outside the windows, seeking the sense of wandering that arises between departure and arrival.',
+      description: 'Vehicles, empty stations, and window-side scenery trace the drifting feeling between departure and arrival.',
       role: '',
       tags: ['Photography', 'Transportation'],
       awards: [],
@@ -155,7 +155,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.06 Urban Silhouettes',
       subtitle: '',
-      description: 'Recording the moments when sunlight weaves through skyscrapers, showcasing how shadows act as brushes, redefining the streets and squares we know.',
+      description: 'Sunlight threading through skyscrapers turns shadows into brushstrokes, reshaping familiar streets and plazas.',
       role: '',
       tags: ['Photography', 'Outdoor'],
       awards: [],
@@ -182,7 +182,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.07 Curated Interiors',
       subtitle: '',
-      description: 'Focusing on store displays and interior soft furnishings, exploring the design philosophy hidden behind small objects and spatial arrangements through a unique aesthetic perspective.',
+      description: 'Focusing on retail displays and interior composition, this series explores the design thinking hidden in objects and spatial arrangement.',
       role: '',
       tags: ['Photography', 'Indoor'],
       awards: [],
@@ -209,7 +209,7 @@ export const PHOTOGRAPHY_PROJECTS: Project[] = [
     en: {
       title: 'Vol.∞ Creative Coordinates',
       subtitle: '',
-      description: 'Documenting my journey. Each photo is a coordinate, connecting my professional skills with an endless curiosity about the world.',
+      description: 'A visual map of my journey: each photo acts as a coordinate linking my craft with an endless curiosity about the world.',
       role: '',
       tags: ['Photography', 'Personal Journey'],
       awards: [],

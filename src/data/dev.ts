@@ -22,10 +22,10 @@ export const DEV_DATA: Project[] = [
     en: {
       title: 'Emotional Healing Mobile App (AR)',
       subtitle: 'Unity / C#',
-      description: '(Bachelor Final Year Project) Featuring guided breath and color walk modules, designed to enhance users daily state and discover the beauty in life through colors.',
+      description: '(Final-year undergraduate project) Features guided breathing and colour-walk modules designed to improve users\' day-to-day emotional well-being through colour-based interaction.',
       role: 'Creative Tech Development',
       tags: ['Unity', 'C#', 'AR'],
-      roleDetail: "Integrating interaction design with technical implementation, independently developed the logic and visual expression for an emotion-focused AR application."
+      roleDetail: "Integrated interaction design with technical implementation, independently building both the core logic and visual language of an emotion-focused AR app."
    }
   },
     {
@@ -52,7 +52,7 @@ subtitle: 'JavaScript / Chrome Extension / Vibe Coding',
 description: 'A lightweight browser extension designed to extract real image links from webpages (especially lazy-loaded sites like WeChat articles) with one click. It features smart numerical sorting, custom keyword filtering, string formatting, and batch downloading.',
 role: 'Product Designer & Vibe Coder',
 tags: ['Chrome Extension', 'Vibe Coding', 'Prompt Engineering'],
-roleDetail: "Driven by the 'Vibe Coding' paradigm, I led the product definition and user flow design. By collaborating with AI via precise prompt engineering, I rapidly generated, debugged, and iterated the core extraction logic, UI layout, and download API integrations, successfully delivering a fully functional extension from scratch."
+roleDetail: "Using an AI-assisted workflow, I led product definition and interaction design. Through precise prompt engineering and AI pair-programming, I iterated quickly on extraction logic, UI layout, and download API integration to ship a fully functional extension from scratch."
    }
   },
 ];

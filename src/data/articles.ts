@@ -12,7 +12,7 @@ export const ARTICLES_PAGE_DATA: Record<Language, ArticlesPageContent> = {
   },
   en: {
     title: 'Articles',
-    description: 'Thoughts, learning journey, and life records.'
+    description: 'Thoughts, learning notes, and life updates.'
   }
 };
 

@@ -51,19 +51,19 @@ export const EDUCATION_DATA: Record<Language, EducationPageContent> = {
   en: {
     title: "Education",
     about: "I am a soon-to-be graduate from the University of Portsmouth with a BSc (Hons) in Creative Media Technologies, expected to graduate in summer 2026. Passionate about technical art and creative storytelling, I focus on bridging the gap between artistic vision and technical execution through AI-assisted workflows, motion capture, and interactive prototyping. Beyond the technical realm, I am an avid creator and consumer of ACG (Anime, Comics, and Games) culture, with my video content amassing over 50K views. I am keen on optimizing production processes and finding purposeful workflows in creative projects, whether it's day-to-day life planning or systematizing complex technical documentation.",
-    openToWork: "Learning by Doing + Seeking Internship",
+    openToWork: "Developing my craft, currently seeking internship opportunities",
     viewHonorsLabel: "View Honors & Awards",
     honorsTitle: "Honors & Awards",
-    competitionsTitle: "Competition & Certificates",
+    competitionsTitle: "Competitions & Certificates",
     scholarshipsLabel: "Scholarships",
     titlesLabel: "Leadership Titles",
     experiences: [
       {
         id: '1',
-        year: 'Graduate in summer 2026',
-        title: 'Bachelor / BSc (Hons) Creative Media Technologies',
+        year: 'Expected graduation: Summer 2026',
+        title: 'BSc (Hons) in Creative Media Technologies',
         institution: 'University of Portsmouth',
-        description: 'A multidisciplinary program centered on Motion Capture, Animation, VFX, and Interactive Systems.Technical Foundations: Gained proficiency in Game Programming (Python, C#) and building assets within Unity and Unreal Engine.Design & Communication: Developed skills in UI Design and Communication Design, focusing on user-centric interactive applications.',
+        description: 'A multidisciplinary program centred on motion capture, animation, VFX, and interactive systems. Built technical foundations in game programming (Python and C#) and asset production in Unity and Unreal Engine. Developed design and communication skills with a focus on user-centred interactive applications.',
         type: 'education'
       }
     ],
@@ -77,7 +77,7 @@ export const EDUCATION_DATA: Record<Language, EducationPageContent> = {
         },
         {
           level: "Certificates",
-          awards: ["Intermediate Engineering Certificate","Tencent Product Manager Training Certificate","Voice Acting Training Certificate","Chinese Driving License"]
+          awards: ["Intermediate Certificate in VR Technology Applications (C#)","Tencent Product Manager Training Certificate","Voice Acting Training Certificate","Chinese Driving License"]
         }
       ]
     }

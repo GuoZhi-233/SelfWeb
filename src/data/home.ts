@@ -29,8 +29,8 @@ export const HOME_DATA: Record<Language, HomeContent> = {
     heroItems: [
       { text: "Photo & Video", annotation: "(Daily Life)", category: Category.VIDEO },
       { text: "Creative Design", annotation: "(Main Focus)", category: Category.DESIGN },
-      { text: "Development", annotation: "(Vibe Coder)", category: Category.DEV },
-      { text: "Cooking", annotation: "(And Baking)", category: null }
+      { text: "Development", annotation: "(Creative Coding)", category: Category.DEV },
+      { text: "Cooking", annotation: "(& Baking)", category: null }
     ],
     intro: "And miles to go before I sleep.",
     selectedWorks: "Selected Works",

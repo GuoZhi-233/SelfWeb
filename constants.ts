@@ -31,11 +31,11 @@ export const ARTICLE_LABELS: Record<Language, Record<string, string>> = {
   },
   en: {
     'All': 'All',
-    [ArticleCategory.DIT]: 'DiT | DMT & Courses',
+    [ArticleCategory.DIT]: 'DiT | Digital Media & Courses',
     [ArticleCategory.LUNA]: 'LUNA | Visual Arts',
-    [ArticleCategory.TALK]: 'Random Thoughts',
-    [ArticleCategory.AFTER8]: 'After8 | Art Talk',
-    [ArticleCategory.SERENITY]: 'Serenity Vista | Travel'
+    [ArticleCategory.TALK]: 'Musings & Reflections',
+    [ArticleCategory.AFTER8]: 'After8 | Art Conversations',
+    [ArticleCategory.SERENITY]: 'Serenity Vista | Travel Notes'
   }
 };
 

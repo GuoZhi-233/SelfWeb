@@ -12,6 +12,6 @@ export const PORTFOLIO_PAGE_DATA: Record<Language, PortfolioPageContent> = {
   },
   en: {
     title: 'Portfolio',
-    description: 'A selection of works spanning Videography, Visual Design, and Application Development.'
+    description: 'A curated selection of work across videography, visual design, and application development.'
   }
 };

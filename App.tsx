@@ -25,7 +25,7 @@ function App() {
   const [language, setLanguage] = useState<Language>('zh');
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   
-  const [portfolioCategory, setPortfolioCategory] = useState<string>('All');
+  const [portfolioCategory, setPortfolioCategory] = useState<string>(Category.DESIGN);
   
   const [gravityActive, setGravityActive] = useState(false);
 
@@ -83,6 +83,15 @@ function App() {
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'zh' ? 'en' : 'zh');
+  };
+
+  const handleTabNavigation = (tab: string) => {
+    startViewTransition(() => {
+      if (tab === 'dashboard' || tab === 'portfolio') {
+        setPortfolioCategory(Category.DESIGN);
+      }
+      setActiveTab(tab);
+    });
   };
 
   const handleHeroNavigation = (category: Category) => {
@@ -368,7 +377,7 @@ function App() {
         return (
           <>
             <HeroSection 
-              onNavigate={(tab) => startViewTransition(() => setActiveTab(tab))} 
+              onNavigate={handleTabNavigation}
               onCategorySelect={handleHeroNavigation}
               language={language} 
             />
@@ -658,7 +667,7 @@ function App() {
         return (
           <>
             <HeroSection 
-              onNavigate={(tab) => startViewTransition(() => setActiveTab(tab))} 
+              onNavigate={handleTabNavigation}
               onCategorySelect={handleHeroNavigation}
               language={language} 
             />
@@ -675,7 +684,7 @@ function App() {
       {/* Dynamic Navigation */}
       <Sidebar 
         activeTab={activeTab} 
-        setActiveTab={(tab) => startViewTransition(() => setActiveTab(tab))} 
+        setActiveTab={handleTabNavigation}
         language={language}
         toggleLanguage={toggleLanguage}
         theme={theme}

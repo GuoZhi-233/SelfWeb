@@ -46,7 +46,7 @@ export const CONTACT_DATA: Record<Language, ContactContent> = {
     emailMeLabel: "Email Me",
     email: "zhoupeng.media@outlook.com",
     hello: "Hello ;-)",
-    intro: "Welcome to discuss & cooperate.",
+    intro: "Open to conversations and collaborations.",
     socials: {
       wechat: "_guozhi_",
       xiaohongshu: "@果之",
