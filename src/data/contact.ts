@@ -24,7 +24,7 @@ export interface ContactContent {
 export const CONTACT_DATA: Record<Language, ContactContent> = {
   zh: {
     baseLabel: "BASE",
-    locationValue: "上海/广州, 中国",
+    locationValue: "上海/广州/伦敦",
     contactLabel: "取得联系",
     emailMeLabel: "邮箱",
     email: "zhoupeng.media@outlook.com",
@@ -41,7 +41,7 @@ export const CONTACT_DATA: Record<Language, ContactContent> = {
   },
   en: {
     baseLabel: "BASE",
-    locationValue: "Portsmouth, UK",
+    locationValue: "Shanghai/Guangzhou/London",
     contactLabel: "Get in touch",
     emailMeLabel: "Email Me",
     email: "zhoupeng.media@outlook.com",

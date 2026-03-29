@@ -91,28 +91,29 @@ export const DESIGN_DATA: Project[] = [
     id: 'd4',
     common: {
       category: 'Graphics & UI',
-      image: 'https://i2.hdslb.com/bfs/archive/46bd081e277692fbcdc40f9fa21171e45c74d61c.jpg@672w_378h_1c_!web-search-common-cover.avif',
+      image: 'https://i1.hdslb.com/bfs/archive/9af4f902da6f23bb23a0ba5c845cff7b8a609fd9.jpg@308w_174h',
       figmaUrl: '', 
       gallery: [''],
-      bilibiliId: 'BV19mX5BwE2R'
+      bilibiliId: 'BV1CsX2BTEzW'
     },
     zh: {
-      title: 'MotionBuilder 动捕数据配置与 UE5 动画重定向管线',
-       subtitle: '动作捕捉',
-       description: '这是一个基于 MotionBuilder 和 Unreal Engine 5 的简短动捕动画管线验证项目。',
-       role: '个人制作',
-       tags:[ 'MotionBuilder', 'UE5', 'Retargeting (重定向)'],
-       concept: '完整流程择日放出，Shogun数据提取-清理→导出.fbx至mobu整理-配置character-将UE的人物导出至mobu，在mobu中重新绑定骨骼并渲染动画→导入进UE5',
-       roleDetail: '动捕棚录制-数据清理-骨骼重建-动画烘焙-UE5重定向配置-最终动画效果实现。(动捕原始数据源自课程/开源素材)'
+      title: 'Mocap 全流程管线：从 Vicon Shogun 到 UE5 的数据处理与重定向',
+    subtitle: '动作捕捉 (全流程验证)',
+    description: '本项目完整演示了动作捕捉的工业级标准管线，涵盖从光学原始数据采集到游戏引擎最终表现的全过程。',
+    role: '个人制作',
+    tags: ['Vicon Shogun', 'MotionBuilder', 'UE5', 'Retargeting (重定向)', 'Data Cleanup'],
+    concept: '全流程技术展示：在 Vicon Shogun 中进行原始数据提取与清理（Gap Filling）；在 MotionBuilder 中完成角色配置（Characterization）、骨骼重映射（Skeleton Mapping）与动画烘焙（Plotting）；最终导入 Unreal Engine 5 进行 IK Retargeter 配置与效果验证。',
+    roleDetail: '负责全流程实施：动捕棚现场录制、原始光学数据清理（断帧修复/标签校对）、骨骼解算与重建、动画数据烘焙、UE5 重定向管线搭建及最终动画效果实现。（原始数据源自课程/开源素材）'
     },
+
     en: {
-      title: 'MotionBuilder Motion Capture Data Configuration & UE5 Animation Retargeting Pipeline',
-      subtitle: 'Mocap',
-      description: 'A concise motion capture animation pipeline validation project based on MotionBuilder and Unreal Engine 5.',
-      role: 'Individual Project',
-      tags: ['MotionBuilder', 'UE5', 'Retargeting'],
-      concept: 'The complete process will be released at a later date. It involves extracting and cleaning motion capture data using Shogun, exporting it as .fbx to MotionBuilder for organization and character configuration, re-binding the skeleton in MotionBuilder and rendering the animation, and finally importing it into UE5 for retargeting.',
-      roleDetail: 'Motion capture recording, data cleaning, skeleton reconstruction, animation baking, UE5 retargeting configuration, and final animation implementation. (Original motion capture data sourced from the course/open-source materials)'
+      title: 'End-to-End Mocap Pipeline: Data Processing & Retargeting from Vicon Shogun to UE5',
+    subtitle: 'Motion Capture (Full Pipeline)',
+    description: 'A comprehensive technical verification project demonstrating the industry-standard motion capture workflow, from raw optical data acquisition to final engine integration.',
+    role: 'Solo Project',
+    tags: ['Vicon Shogun', 'MotionBuilder', 'UE5', 'Retargeting', 'Data Cleanup'],
+    concept: 'Full pipeline demonstration: Raw data extraction and cleanup (Gap Filling) in Vicon Shogun; Characterization, skeleton remapping, and animation plotting in MotionBuilder; Final IK Retargeter configuration and performance verification within Unreal Engine 5.',
+    roleDetail: 'Responsible for the entire lifecycle: On-site recording, raw optical data cleaning (Labeling/Gap Filling), skeleton solving and reconstruction, animation baking, UE5 retargeting pipeline setup, and final in-engine implementation. (Raw data sourced from course/open-source materials)',
    }
   },
     {

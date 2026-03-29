@@ -56,7 +56,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ language }) =>
 
   const handleUnlockSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (inputAnswer.trim() === '鹏' || inputAnswer.trim() === 'Zhou' || inputAnswer.trim() === 'ZHOU') {
+    if (inputAnswer.trim() === '鹏' || inputAnswer.trim() === 'Peng' || inputAnswer.trim() === 'peng' || inputAnswer.trim() === 'PENG') {
       setIsSuccess(true);
       decryptPayload(inputAnswer.trim());
       // 1. Show Green Success State
@@ -130,7 +130,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ language }) =>
              <p className="text-xl font-medium text-gray-500 dark:text-gray-400">
                {isSuccess 
                   ? (language === 'zh' ? '回答正确，欢迎！' : 'Access Granted!') 
-                  : (language === 'zh' ? '名字最后一个字是？' : 'What my surname is?')
+                  : (language === 'zh' ? '名字最后一个字是？' : 'What is my last name?')
                }
              </p>
            </div>
