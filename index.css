@@ -1292,223 +1292,101 @@ p {
   background: var(--lime);
   color: #20281d;
 }
-/* Intro: drawn identity, concentric scanning, archive access, white reveal. */
+/* A forest grows from the bottom edge; its canopy closes before the route swaps. */
 .boot-screen {
   position: fixed;
   inset: 0;
   z-index: 150;
-  background: #f0f0e6;
-  color: #20281d;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 38px 4%;
+  background: #dce4d2;
+  color: #f0f0e6;
   overflow: hidden;
-  animation: boot-reveal 0.25s both;
-}
-.boot-top,
-.boot-bottom {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  letter-spacing: 2px;
-  gap: 20px;
 }
 .boot-bottom {
-  align-items: center;
+  position: absolute;
+  right: 4%;
+  bottom: 30px;
+  z-index: 4;
 }
 .boot-bottom button {
   font-size: 12px;
   letter-spacing: 1px;
   padding: 15px;
-  border-bottom: 1px solid #20281d40;
-}
-.boot-center {
-  position: absolute;
-  left: 50%;
-  top: 43%;
-  transform: translate(-50%, -50%);
-  width: 360px;
-  height: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.boot-orbit {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid #20281d40;
-  transition:
-    transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
-    opacity 0.7s;
-  transform: scale(1.6);
-  opacity: 0;
-}
-.orbit-one {
-  width: 340px;
-  height: 340px;
-  border-left: 4px solid #20281d;
-  border-right: 4px solid #20281d;
-}
-.orbit-two {
-  width: 285px;
-  height: 285px;
-  border-top: 7px solid #b5d32e;
-  border-bottom: 7px solid #b5d32e;
-}
-.orbit-three {
-  width: 240px;
-  height: 240px;
-  border-style: dashed;
-}
-.boot-mark {
-  width: 78px;
-  transition:
-    transform 0.7s,
-    opacity 0.5s;
-  clip-path: inset(100% 0 0);
-  animation: logo-draw 1.1s 0.15s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
-}
-.boot-mark svg {
-  width: 100%;
-}
-.boot-wordmark {
-  font-size: 55px;
-  line-height: 0.9;
-  letter-spacing: -3px;
-  font-weight: 800;
-  position: absolute;
-  left: 160px;
-  opacity: 0;
-  transform: translateX(40px);
-  transition:
-    transform 0.6s,
-    opacity 0.6s;
-}
-.boot-step-1 .boot-orbit,
-.boot-step-2 .boot-orbit {
-  opacity: 1;
-  transform: scale(1);
-}
-.boot-step-2 .orbit-one {
-  transform: rotate(155deg);
-}
-.boot-step-2 .orbit-two {
-  transform: rotate(-100deg);
-}
-.boot-step-2 .orbit-three {
-  transform: scale(1.12);
-}
-.boot-step-3 .boot-mark,
-.boot-step-4 .boot-mark {
-  transform: translateX(-100px) scale(0.8);
-}
-.boot-step-3 .boot-wordmark,
-.boot-step-4 .boot-wordmark {
-  opacity: 1;
-  transform: none;
-}
-.boot-step-3 .boot-orbit,
-.boot-step-4 .boot-orbit {
-  opacity: 0;
-  transform: scale(2.7) rotate(130deg);
-}
-.boot-caption {
-  position: absolute;
-  top: 72%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(370px, 75vw);
-  text-align: center;
-  font-size: 11px;
-  letter-spacing: 2px;
-}
-.boot-caption > span:first-child {
-  display: block;
-  min-height: 20px;
-  animation: type-in 0.4s steps(25) both;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.boot-track {
-  height: 2px;
-  background: #20281d25;
-  margin: 22px 0 16px;
-}
-.boot-track i {
-  display: block;
-  height: 100%;
-  background: #20281d;
-  transform-origin: left;
-  transition: transform 0.6s;
-}
-.boot-index {
-  font-size: 10px;
+  background: #172b21;
+  border: 1px solid #f0f0e640;
 }
 .page-transition {
   position: fixed;
   inset: 0;
   z-index: 120;
   pointer-events: none;
-  display: flex;
+  overflow: hidden;
 }
-.page-transition > div {
-  height: 100%;
-  flex: 1;
-  background: var(--green);
-  transform: scaleY(0);
-  transform-origin: bottom;
-}
-.page-transition.cover > div {
-  animation: shutter-in 0.35s cubic-bezier(0.7, 0, 0.2, 1)
-    calc(var(--i) * 0.025s) both;
-}
-.page-transition.reveal > div {
-  transform-origin: top;
-  animation: shutter-out 0.4s cubic-bezier(0.7, 0, 0.2, 1)
-    calc(var(--i) * 0.025s) both;
-}
-.page-transition > span {
+.forest-scene {
+  --forest-growth-time: 650ms;
+  --forest-stagger: 25ms;
+  --forest-spread-delay: 500ms;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: var(--paper);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  opacity: 0;
+  inset: 0;
+  overflow: hidden;
+  color: #172b21;
+  isolation: isolate;
 }
-.page-transition > span svg {
-  width: 25px;
-  height: 43px;
+.forest-slow {
+  --forest-growth-time: 1250ms;
+  --forest-stagger: 65ms;
+  --forest-spread-delay: 1400ms;
 }
-.page-transition.cover > span {
-  animation: boot-reveal 0.2s 0.1s both;
+.forest-tree {
+  position: absolute;
+  left: var(--tree-x);
+  bottom: -1px;
+  width: var(--tree-size);
+  height: var(--tree-size);
+  margin-left: calc(var(--tree-size) / -2);
+  transform-origin: 50% 100%;
+  z-index: 2;
+  will-change: transform;
+  animation: forest-grow var(--forest-growth-time) cubic-bezier(.45, 0, .25, 1)
+    calc(var(--tree-delay) * var(--forest-stagger)) both;
 }
-.page-transition.reveal > span {
-  display: none;
+.forest-tree svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* The icon's trunk ends at y=22. Crop its empty margin to root it on screen. */
+  transform: translateY(8.333333%);
+}
+.forest-tree-back {
+  color: #62765a;
+  z-index: 1;
+}
+.forest-canopy {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: #172b21;
+  /* Solid coverage prevents the new page flashing between the tree crowns. */
+  animation: forest-close 350ms ease-in var(--forest-spread-delay) both;
+}
+.page-transition.reveal,
+.forest-intro.reveal {
+  animation: forest-reveal var(--forest-reveal-time) ease-out both;
 }
 .route-enter {
   animation: page-in 0.7s cubic-bezier(0.2, 0.7, 0.3, 1) both;
 }
-@keyframes shutter-in {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
+@keyframes forest-grow {
+  from { transform: scale(.015); }
+  35% { transform: scale(.26); }
+  to { transform: scale(1); }
 }
-@keyframes shutter-out {
-  from {
-    transform: scaleY(1);
-  }
-  to {
-    transform: scaleY(0);
-  }
+@keyframes forest-close {
+  from { clip-path: circle(0 at 50% 100%); }
+  to { clip-path: circle(150vmax at 50% 100%); }
+}
+@keyframes forest-reveal {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 @keyframes page-in {
   from {
@@ -1520,27 +1398,6 @@ p {
     opacity: 1;
     transform: none;
     filter: none;
-  }
-}
-@keyframes logo-draw {
-  to {
-    clip-path: inset(0);
-  }
-}
-@keyframes boot-reveal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes type-in {
-  from {
-    max-width: 0;
-  }
-  to {
-    max-width: 100%;
   }
 }
 /* Footer and the original music library. */
@@ -2119,47 +1976,9 @@ p {
   .sound-toggle > span {
     font-size: 9px;
   }
-  .boot-center {
-    width: 300px;
-    height: 300px;
-  }
-  .orbit-one {
-    width: 290px;
-    height: 290px;
-  }
-  .orbit-two {
-    width: 240px;
-    height: 240px;
-  }
-  .orbit-three {
-    width: 200px;
-    height: 200px;
-  }
-  .boot-wordmark {
-    font-size: 48px;
-    left: 130px;
-  }
-  .boot-mark {
-    width: 63px;
-  }
-  .boot-step-3 .boot-mark,
-  .boot-step-4 .boot-mark {
-    transform: translateX(-95px) scale(0.8);
-  }
-  .boot-top,
   .boot-bottom {
-    font-size: 9px;
-    letter-spacing: 1px;
-  }
-  .boot-bottom > span {
-    max-width: 130px;
-    line-height: 1.8;
-  }
-  .boot-caption {
-    font-size: 9px;
-  }
-  .boot-screen {
-    padding: 28px 6%;
+    right: 6%;
+    bottom: 24px;
   }
 }
 @media (max-width: 400px) {

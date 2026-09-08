@@ -6,6 +6,7 @@ import Showreel from "./components/Showreel";
 import Archive, { GeometryPanel, ProjectDetail } from "./components/Archive";
 import { AboutPage, ContactPage } from "./components/PersonalPages";
 import SoundDock from "./components/SoundDock";
+import ForestTransition, { FOREST_COVER_MS, FOREST_REVEAL_MS } from "./components/ForestTransition";
 import { Language } from "./types";
 
 const readRoute = () => {
@@ -39,7 +40,7 @@ export default function App() {
   );
   const [target, setTarget] = useState(readRoute),
     [route, setRoute] = useState(readRoute),
-    [transition, setTransition] = useState("");
+    [transition, setTransition] = useState<"" | "cover" | "reveal">("");
   const current = useRef(route),
     main = useRef<HTMLElement>(null),
     works = useRef<HTMLDivElement>(null);
@@ -70,8 +71,8 @@ export default function App() {
     const swap = setTimeout(() => {
       apply();
       setTransition("reveal");
-    }, 360);
-    const end = setTimeout(() => setTransition(""), 880);
+    }, FOREST_COVER_MS);
+    const end = setTimeout(() => setTransition(""), FOREST_COVER_MS + FOREST_REVEAL_MS);
     return () => {
       clearTimeout(swap);
       clearTimeout(end);
@@ -329,16 +330,7 @@ export default function App() {
         </footer>
         <SoundDock language={language} />
       </div>
-      {transition && (
-        <div className={`page-transition ${transition}`} aria-hidden="true">
-          {[0, 1, 2, 3, 4].map((i) => (
-            <div key={i} style={{ "--i": i } as React.CSSProperties} />
-          ))}
-          <span>
-            <BrandMark /> PENG ZHOU
-          </span>
-        </div>
-      )}
+      {transition && <ForestTransition key={target} phase={transition} />}
     </>
   );
 }
