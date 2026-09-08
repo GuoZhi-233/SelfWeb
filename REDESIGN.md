@@ -7,7 +7,7 @@ The existing React + Vite project and all portfolio data remain in place. Work t
 - The introduction draws the original identity, runs concentric scans and opens the portfolio. Escape, Enter or Skip dismiss it. Reduced-motion preferences bypass it.
 - The homepage plays the complete 72.68-second showreel, muted and inline. Playback pauses outside the viewport or in a hidden tab. Sound, pause, fullscreen and manual-play fallback controls remain available.
 - Scrolling reveals selected projects. Dedicated hash routes provide all work, categories, details, photography lightboxes, experience and contact information. Browser back/forward navigates between routes.
-- Glass geometry is rendered in Three.js using extruded square shapes with circular holes, physical transmission and an environment map. It loads near the viewport and stops animating offscreen. No botanical decoration or stock plant images are used.
+- The 3D logo is rendered in Three.js from the original two Bézier paths, with charcoal and lime glass, beveled extrusion and an environment map. It loads near the viewport and stops animating offscreen. No botanical decoration or stock plant images are used.
 - The original background music remains available from the soundtrack control. Lossless source audio remains in the repository; smaller MP3 playback copies ship to the website.
 
 ## Development and publishing

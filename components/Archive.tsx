@@ -35,9 +35,9 @@ export function GeometryPanel({ reduced = false }: { reduced?: boolean }) {
       <div className="geometry-cross cross-a">+</div>
       <div className="geometry-cross cross-b">+</div>
       <span className="geometry-caption">
-        FORM / 001
+        PZ / 001
         <br />
-        SQUARE ∩ CIRCLE
+        IDENTITY IN DEPTH
       </span>
       <Suspense fallback={<div className="geometry-loading" />}>
         {near && <GlassGeometry reduced={reduced} />}
