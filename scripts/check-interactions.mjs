@@ -5,12 +5,11 @@ import postcss from 'postcss';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 await mkdir('.cache', { recursive: true });
-for (const name of ['MediaVolume', 'useDeviceTilt', 'PageTransition']) {
+for (const name of ['MediaVolume', 'PageTransition']) {
   await build({ entryPoints: [`components/${name}.ts${name === 'PageTransition' ? 'x' : ''}`],
     bundle: true, platform: 'node', format: 'esm', packages: 'external', outfile: `.cache/${name}.mjs` });
 }
 const { default: MediaVolume } = await import('../.cache/MediaVolume.mjs');
-const { tiltRotation } = await import('../.cache/useDeviceTilt.mjs');
 const { default: PageTransition } = await import('../.cache/PageTransition.mjs');
 
 // Reproduce iOS: writing media.volume has no effect. The gain must still change.
@@ -43,15 +42,6 @@ assert.equal(contexts, 1);
 assert.equal(sources, 1, 'Repeated playback must reuse its media source');
 assert.equal(resumes, 2, 'Playback resumes a suspended audio context');
 control.dispose();
-
-assert.deepEqual(tiltRotation(0, 0, 0), { x: 0, y: 0 });
-const portrait = tiltRotation(0, 35, 0);
-const landscape = tiltRotation(35, 0, 90);
-assert.ok(Math.abs(portrait.x - landscape.x) < 1e-9);
-for (const angle of [0, 90, 180, 270]) {
-  const rotation = tiltRotation(179, -89, angle);
-  assert.ok(Math.abs(rotation.x) <= .32 && Math.abs(rotation.y) <= .2);
-}
 
 let covered = 0, finished = 0;
 const transition = (phase) => PageTransition({ phase,
@@ -89,4 +79,4 @@ for (const viewport of [320, 655, 1081, 1365.33, 1536, 1920, 2560, 3440, 5120, 7
     assert.ok(end >= size);
   }
 }
-console.log('Interaction checks passed: iOS-style gain control, track persistence, tilt mapping, transition completion and 50 viewport/DPR combinations.');
+console.log('Interaction checks passed: iOS-style gain control, track persistence, transition completion and 50 viewport/DPR combinations.');

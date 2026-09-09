@@ -27,6 +27,7 @@ for(language of ['zh','en']){
    assert.ok(html.includes(language === 'zh' ? '2026年7月' : 'July 2026'));
    assert.ok(html.includes(language === 'zh' ? '一等荣誉学士' : 'First-Class'));
    assert.ok(html.includes(language === 'zh' ? '2026应届毕业生' : 'Class of 2026'));
+   assert.ok(html.includes('GPA 3.85/4.0'));
   }
   if(route.startsWith('project/')){
    const p=PROJECT_DATA.find(p=>p.id===route.slice(8));

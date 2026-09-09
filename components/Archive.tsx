@@ -40,7 +40,7 @@ export function GeometryPanel({ reduced = false, language = "zh" }: { reduced?: 
         IDENTITY IN DEPTH
       </span>
       <Suspense fallback={<div className="geometry-loading" />}>
-        {near && <GlassGeometry reduced={reduced} language={language} />}
+        {near && <GlassGeometry reduced={reduced} />}
       </Suspense>
       <span className="geometry-foot">IDEAS IN A DIFFERENT DIMENSION</span>
     </div>

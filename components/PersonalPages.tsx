@@ -38,7 +38,10 @@ export function AboutPage({
         <GeometryPanel reduced={reduced} language={language} />
       </div>
       <div className="about-statement">
-        <span className="eyebrow">ABOUT / PENG ZHOU</span>
+        <div className="about-meta">
+          <span className="eyebrow">ABOUT / PENG ZHOU</span>
+          <p className="about-gpa">GPA 3.85/4.0</p>
+        </div>
         <p>{d.about}</p>
       </div>
       <h2 className="subheading">{d.title}</h2>
