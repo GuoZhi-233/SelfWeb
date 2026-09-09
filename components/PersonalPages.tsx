@@ -34,12 +34,8 @@ export function AboutPage({
               </>
             )}
           </h1>
-          <span className="status-label">
-            <i />
-            {d.openToWork}
-          </span>
         </div>
-        <GeometryPanel reduced={reduced} />
+        <GeometryPanel reduced={reduced} language={language} />
       </div>
       <div className="about-statement">
         <span className="eyebrow">ABOUT / PENG ZHOU</span>
@@ -143,7 +139,7 @@ export function ContactPage({
             {d.baseLabel} / {d.locationValue}
           </p>
         </div>
-        <GeometryPanel reduced={reduced} />
+        <GeometryPanel reduced={reduced} language={language} />
       </div>
       <div className="social-grid">
         {links.map((l, i) => (

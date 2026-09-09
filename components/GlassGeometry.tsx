@@ -2,15 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { BrandMark } from "./BootSequence";
+import useDeviceTilt from "./useDeviceTilt";
+import { Language } from "../types";
 
 // The exact two paths of the original brand mark, mapped from SVG to 3D.
 export default function GlassGeometry({
   reduced = false,
+  language = "zh",
 }: {
   reduced?: boolean;
+  language?: Language;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const [available, setAvailable] = useState(true);
+  const { tilt, supported, status, enabled, toggle } = useDeviceTilt(reduced);
+  const zh = language === "zh";
   useEffect(() => {
     const element = host.current;
     if (!element) return;
@@ -101,8 +107,8 @@ export default function GlassGeometry({
     };
     const draw = (time: number) => {
       if (disposed) return;
-      group.rotation.y += (-0.32 + x - group.rotation.y) * 0.04;
-      group.rotation.x += (0.08 + y - group.rotation.x) * 0.04;
+      group.rotation.y += (-0.32 + x + (reduced ? 0 : tilt.current.x) - group.rotation.y) * 0.04;
+      group.rotation.x += (0.08 + y + (reduced ? 0 : tilt.current.y) - group.rotation.x) * 0.04;
       if (!reduced) {
         group.position.y = Math.sin(time * 0.00055) * 0.085;
       }
@@ -164,8 +170,9 @@ export default function GlassGeometry({
       renderer.dispose();
       renderer.domElement.remove();
     };
-  }, [reduced]);
+  }, [reduced, tilt]);
   return (
+    <>
     <div ref={host} className="glass-scene" aria-hidden="true">
       {!available && (
         <span className="glass-fallback">
@@ -173,5 +180,20 @@ export default function GlassGeometry({
         </span>
       )}
     </div>
+    {supported && available && !reduced && (
+      <div className="tilt-control">
+        <button onClick={toggle} aria-pressed={enabled} disabled={status === "asking"}>
+          {status === "asking" ? (zh ? "等待授权…" : "Awaiting permission…") :
+            enabled ? (zh ? "关闭倾斜互动" : "Disable tilt") :
+            (zh ? "启用倾斜互动" : "Enable tilt")}
+        </button>
+        <span role="status">
+          {status === "denied" ? (zh ? "未获授权，仍可触摸旋转" : "Permission denied. Touch to rotate.") :
+            status === "unavailable" ? (zh ? "未检测到传感器，仍可触摸旋转" : "No sensor detected. Touch to rotate.") :
+            status === "waiting" ? (zh ? "轻轻倾斜手机" : "Gently tilt your phone") : ""}
+        </span>
+      </div>
+    )}
+    </>
   );
 }

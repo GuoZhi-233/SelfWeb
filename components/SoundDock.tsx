@@ -2,11 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { Music2, Pause, Play, SkipBack, SkipForward, X } from "lucide-react";
 import { MUSIC_PLAYLIST } from "../src/data/music";
 import { Language } from "../types";
+import MediaVolume from "./MediaVolume";
 export default function SoundDock({ language }: { language: Language }) {
   const [open, setOpen] = useState(false),
     [index, setIndex] = useState(0),
     [playing, setPlaying] = useState(false),
     [error, setError] = useState(false);
+  const [volume, setVolume] = useState(.4);
+  const volumeValue = useRef(.4);
+  const volumeControl = useRef<MediaVolume | null>(null);
   const audio = useRef<HTMLAudioElement>(null),
     autoplay = useRef(false);
   const song = MUSIC_PLAYLIST[index],
@@ -21,21 +25,41 @@ export default function SoundDock({ language }: { language: Language }) {
     window.addEventListener("showreel-sound", pause);
     return () => window.removeEventListener("showreel-sound", pause);
   }, []);
+  useEffect(() => () => {
+    audio.current?.pause();
+    volumeControl.current?.dispose();
+    volumeControl.current = null;
+  }, []);
+  const controller = () => {
+    if (!audio.current) return null;
+    volumeControl.current ??= new MediaVolume(audio.current, volumeValue.current);
+    return volumeControl.current;
+  };
+  const play = () => {
+    // Start both operations in the user gesture, before awaiting either on iOS.
+    const resumed = controller()?.resume();
+    const started = audio.current?.play();
+    return Promise.all([resumed, started]);
+  };
   useEffect(() => {
+    let cancelled = false;
     setError(false);
     if (autoplay.current)
-      void audio.current?.play().catch(() => {
+      void play().catch(() => {
+        if (cancelled) return;
         setPlaying(false);
         setError(true);
       });
+    return () => { cancelled = true; };
   }, [index]);
   const select = (n: number) => {
     autoplay.current = playing;
     setIndex((n + MUSIC_PLAYLIST.length) % MUSIC_PLAYLIST.length);
   };
   const toggle = () => {
+    setError(false);
     if (audio.current?.paused)
-      void audio.current.play().catch(() => setError(true));
+      void play().catch(() => setError(true));
     else audio.current?.pause();
   };
   return (
@@ -45,7 +69,8 @@ export default function SoundDock({ language }: { language: Language }) {
         src={resolve(song.audio)}
         preload="none"
         onLoadedMetadata={() => {
-          if (audio.current) audio.current.volume = 0.4;
+          if (volumeControl.current) volumeControl.current.setVolume(volumeValue.current);
+          else if (audio.current) audio.current.volume = volumeValue.current;
         }}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -107,10 +132,15 @@ export default function SoundDock({ language }: { language: Language }) {
               min="0"
               max="1"
               step="0.05"
-              defaultValue="0.4"
+              value={volume}
+              aria-valuetext={`${Math.round(volume * 100)}%`}
               onChange={(e) => {
-                if (audio.current)
-                  audio.current.volume = Number(e.target.value);
+                const next = Number(e.target.value);
+                volumeValue.current = next;
+                setVolume(next);
+                const control = controller();
+                control?.setVolume(next);
+                void control?.resume().catch(() => setError(true));
               }}
             />
           </label>

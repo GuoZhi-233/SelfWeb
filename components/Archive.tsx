@@ -20,7 +20,7 @@ export const categories = [
   Category.VIDEO,
   Category.DEV,
 ];
-export function GeometryPanel({ reduced = false }: { reduced?: boolean }) {
+export function GeometryPanel({ reduced = false, language = "zh" }: { reduced?: boolean; language?: Language }) {
   const panel = useRef<HTMLDivElement>(null);
   const [near, setNear] = useState(false);
   useEffect(() => {
@@ -40,7 +40,7 @@ export function GeometryPanel({ reduced = false }: { reduced?: boolean }) {
         IDENTITY IN DEPTH
       </span>
       <Suspense fallback={<div className="geometry-loading" />}>
-        {near && <GlassGeometry reduced={reduced} />}
+        {near && <GlassGeometry reduced={reduced} language={language} />}
       </Suspense>
       <span className="geometry-foot">IDEAS IN A DIFFERENT DIMENSION</span>
     </div>

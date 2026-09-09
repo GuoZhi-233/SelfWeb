@@ -6,7 +6,7 @@ import Showreel from "./components/Showreel";
 import Archive, { GeometryPanel, ProjectDetail } from "./components/Archive";
 import { AboutPage, ContactPage } from "./components/PersonalPages";
 import SoundDock from "./components/SoundDock";
-import ForestTransition, { FOREST_COVER_MS, FOREST_REVEAL_MS } from "./components/ForestTransition";
+import PageTransition from "./components/PageTransition";
 import { Language } from "./types";
 
 const readRoute = () => {
@@ -68,16 +68,14 @@ export default function App() {
       return;
     }
     setTransition("cover");
-    const swap = setTimeout(() => {
-      apply();
-      setTransition("reveal");
-    }, FOREST_COVER_MS);
-    const end = setTimeout(() => setTransition(""), FOREST_COVER_MS + FOREST_REVEAL_MS);
-    return () => {
-      clearTimeout(swap);
-      clearTimeout(end);
-    };
   }, [target, reduced]);
+  const revealRoute = () => {
+    current.current = target;
+    setRoute(target);
+    window.scrollTo({ top: 0, behavior: "instant" });
+    requestAnimationFrame(() => main.current?.focus({ preventScroll: true }));
+    setTransition("reveal");
+  };
   useEffect(() => {
     document.documentElement.lang = zh ? "zh-CN" : "en";
     document.documentElement.classList.toggle("dark", dark);
@@ -233,7 +231,7 @@ export default function App() {
                       <ArrowUpRight size={24} />
                     </button>
                   </div>
-                  <GeometryPanel reduced={reduced} />
+                  <GeometryPanel reduced={reduced} language={language} />
                 </div>
                 <Archive
                   language={language}
@@ -272,7 +270,7 @@ export default function App() {
                     )}
                   </h1>
                 </div>
-                <GeometryPanel reduced={reduced} />
+                <GeometryPanel reduced={reduced} language={language} />
               </div>
               <Archive
                 language={language}
@@ -330,7 +328,8 @@ export default function App() {
         </footer>
         <SoundDock language={language} />
       </div>
-      {transition && <ForestTransition key={target} phase={transition} />}
+      {transition && <PageTransition key={target} phase={transition}
+        onCovered={revealRoute} onFinished={() => setTransition("")} />}
     </>
   );
 }

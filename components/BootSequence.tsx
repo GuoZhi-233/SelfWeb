@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { ForestSilhouette, FOREST_INTRO_MS, FOREST_REVEAL_MS } from "./ForestTransition";
 
 export function BrandMark({ className = "" }: { className?: string }) {
   return (
@@ -28,16 +27,16 @@ export default function BootSequence({
   onFinish: () => void;
   reduced: boolean;
 }) {
-  const [revealing, setRevealing] = useState(false);
+  const [step, setStep] = useState(0);
   useEffect(() => {
     if (reduced) {
       onFinish();
       return;
     }
-    const timers = [
-      setTimeout(() => setRevealing(true), FOREST_INTRO_MS),
-      setTimeout(onFinish, FOREST_INTRO_MS + FOREST_REVEAL_MS),
-    ];
+    const times = [520, 1250, 2100, 2900, 3500];
+    const timers = times.map((t, i) =>
+      setTimeout(() => (i === 4 ? onFinish() : setStep(i + 1)), t),
+    );
     const key = (e: KeyboardEvent) => {
       if (e.key === "Escape" || e.key === "Enter") onFinish();
     };
@@ -47,16 +46,46 @@ export default function BootSequence({
       document.removeEventListener("keydown", key);
     };
   }, [onFinish, reduced]);
+  const labels = [
+    "INITIALIZING CREATIVE ARCHIVE",
+    "DRAWING IDENTITY",
+    "CONNECTING IDEAS",
+    "PENG ZHOU / ACCESS GRANTED",
+    "WELCOME TO MY WORLD",
+  ];
   return (
     <div
-      className={`boot-screen forest-intro ${revealing ? "reveal" : ""}`}
-      style={{ "--forest-reveal-time": `${FOREST_REVEAL_MS}ms` } as React.CSSProperties}
+      className={`boot-screen boot-step-${step}`}
       role="dialog"
       aria-modal="true"
       aria-label="作品集开场动画"
     >
-      <ForestSilhouette slow />
+      <div className="boot-top">
+        <span>PZ / CREATIVE ARCHIVE</span>
+        <span>EST. 2022</span>
+      </div>
+      <div className="boot-center">
+        <div className="boot-orbit orbit-one" />
+        <div className="boot-orbit orbit-two" />
+        <div className="boot-orbit orbit-three" />
+        <div className="boot-mark">
+          <BrandMark />
+        </div>
+        <div className="boot-wordmark">
+          PENG
+          <br />
+          ZHOU
+        </div>
+      </div>
+      <div className="boot-caption">
+        <span key={step}>{labels[step]}</span>
+        <div className="boot-track">
+          <i style={{ transform: `scaleX(${(step + 1) / 5})` }} />
+        </div>
+        <span className="boot-index">0{Math.min(step + 1, 5)} / 05</span>
+      </div>
       <div className="boot-bottom">
+        <span>IMAGES. IDEAS. INTERACTIONS.</span>
         <button onClick={onFinish} autoFocus>
           跳过开场 / SKIP ↗
         </button>

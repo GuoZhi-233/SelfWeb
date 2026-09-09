@@ -22,6 +22,12 @@ for(language of ['zh','en']){
    assert.ok(html.includes('/SelfWeb/media/showreel.mp4'),'Showreel URL lost its Pages prefix');
    assert.ok(html.indexOf('reel-stage')<html.indexOf('project-grid'),'Projects precede the film');
   }
+  if(route==='about'){
+   assert.ok(!html.includes('status-label'), 'Removed internship badge returned');
+   assert.ok(html.includes(language === 'zh' ? '2026年7月' : 'July 2026'));
+   assert.ok(html.includes(language === 'zh' ? '一等荣誉学士' : 'First-Class'));
+   assert.ok(html.includes(language === 'zh' ? '2026应届毕业生' : 'Class of 2026'));
+  }
   if(route.startsWith('project/')){
    const p=PROJECT_DATA.find(p=>p.id===route.slice(8));
    if(p.common.bilibiliId)assert.ok(html.includes(p.common.bilibiliId),`Missing video link: ${p.id}`);
