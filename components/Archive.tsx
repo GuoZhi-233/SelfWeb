@@ -186,7 +186,7 @@ export default function Archive({
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span>{CATEGORY_LABELS[language][project.category!]}</span>
-                <span>↗</span>
+                <ArrowUpRight size={14} strokeWidth={1.5} aria-hidden="true" />
               </div>
               <ProjectCover project={project} />
               <h3>{project.title}</h3>
